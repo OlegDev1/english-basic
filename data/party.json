@@ -1,0 +1,634 @@
+{
+ "words": [
+  "apple",
+  "banana",
+  "cat",
+  "dog",
+  "teacher",
+  "doctor",
+  "kitchen",
+  "bed",
+  "pizza",
+  "rain",
+  "snow",
+  "sun",
+  "moon",
+  "phone",
+  "computer",
+  "car",
+  "bus",
+  "train",
+  "plane",
+  "school",
+  "birthday",
+  "money",
+  "shop",
+  "chicken",
+  "egg",
+  "milk",
+  "coffee",
+  "tea",
+  "water",
+  "fish",
+  "horse",
+  "cow",
+  "pig",
+  "monkey",
+  "elephant",
+  "lion",
+  "chair",
+  "table",
+  "door",
+  "window",
+  "shoes",
+  "hat",
+  "dress",
+  "T-shirt",
+  "socks",
+  "glasses",
+  "bag",
+  "book",
+  "pen",
+  "guitar",
+  "football",
+  "swimming",
+  "dancing",
+  "sleep",
+  "hospital",
+  "police",
+  "park",
+  "beach",
+  "sea",
+  "mountain",
+  "river",
+  "forest",
+  "tree",
+  "flower",
+  "winter",
+  "summer",
+  "Monday",
+  "breakfast",
+  "sandwich",
+  "ice cream",
+  "chocolate",
+  "cake",
+  "soup",
+  "potato",
+  "tomato",
+  "cheese",
+  "bread",
+  "hand",
+  "nose",
+  "eyes",
+  "teeth",
+  "hair",
+  "mother",
+  "grandmother",
+  "baby",
+  "friend",
+  "king",
+  "ghost",
+  "robot",
+  "dinosaur",
+  "penguin",
+  "spider",
+  "frog",
+  "snake",
+  "zoo",
+  "cinema",
+  "party",
+  "holiday",
+  "ticket",
+  "key",
+  "clock",
+  "umbrella",
+  "fridge",
+  "shower",
+  "toilet",
+  "mirror",
+  "camera",
+  "map",
+  "passport",
+  "hotel",
+  "restaurant",
+  "cook",
+  "singer",
+  "pilot",
+  "farmer",
+  "cold",
+  "hot",
+  "happy",
+  "angry",
+  "tired",
+  "hungry",
+  "rich",
+  "old",
+  "fast",
+  "homework",
+  "weekend",
+  "rainbow",
+  "butterfly",
+  "Christmas",
+  "airport",
+  "alarm clock",
+  "astronaut",
+  "backpack",
+  "bathroom",
+  "bicycle",
+  "blanket",
+  "boat",
+  "bridge",
+  "brother",
+  "butter",
+  "candle",
+  "carrot",
+  "castle",
+  "chef",
+  "circus",
+  "clown",
+  "cloud",
+  "cousin",
+  "dentist",
+  "desert",
+  "dragon",
+  "dream",
+  "duck",
+  "ear",
+  "farm",
+  "fireworks",
+  "garden",
+  "giraffe",
+  "gloves",
+  "grandfather",
+  "hamburger",
+  "helicopter",
+  "honey",
+  "island",
+  "jacket",
+  "jungle",
+  "kangaroo",
+  "kiss",
+  "lemon",
+  "library",
+  "lift",
+  "magic",
+  "mouse",
+  "museum",
+  "music",
+  "night",
+  "octopus",
+  "orange",
+  "pancake",
+  "pillow",
+  "pirate",
+  "pyjamas",
+  "queen",
+  "rabbit",
+  "rocket",
+  "scarf",
+  "shark",
+  "sheep",
+  "shopping",
+  "sister",
+  "skateboard",
+  "smile",
+  "snowman",
+  "soap",
+  "spoon",
+  "star",
+  "street",
+  "supermarket",
+  "swimming pool",
+  "taxi",
+  "tiger",
+  "toothbrush",
+  "towel",
+  "tractor",
+  "turtle",
+  "vampire",
+  "volcano",
+  "waiter",
+  "wedding",
+  "whale",
+  "wind",
+  "witch",
+  "yoga",
+  "zebra"
+ ],
+ "croc": [
+  "a cat in the shower",
+  "a very angry chicken",
+  "I'm late for school",
+  "a grandma on a skateboard",
+  "brushing your teeth",
+  "a dog driving a car",
+  "I can't find my phone",
+  "a hungry dinosaur",
+  "a robot in love",
+  "a penguin on the beach",
+  "eating very hot soup",
+  "a spider in your bed",
+  "a monkey playing the guitar",
+  "a baby elephant dancing",
+  "a pilot who is afraid of planes",
+  "washing a cat",
+  "a snail running very fast",
+  "taking a selfie with a bear",
+  "a fish riding a bike",
+  "a very cold ghost",
+  "a sleepy teacher",
+  "a chicken crossing the road",
+  "a frog who wants a kiss",
+  "a flying pizza",
+  "waiting for the bus in the rain",
+  "a cow doing yoga",
+  "an alien in the supermarket",
+  "a horse at the hairdresser",
+  "a tired superhero",
+  "a cat who hates Mondays",
+  "a very shy lion",
+  "a fly in your soup",
+  "a goat playing football",
+  "a penguin who wants to fly",
+  "opening a very big present",
+  "a grandpa at the disco",
+  "making pancakes",
+  "a crocodile at a birthday party",
+  "a lost tourist in London",
+  "a zombie at the gym",
+  "a cat at the hairdresser",
+  "a vampire who is afraid of the dark",
+  "a dog in a swimming pool",
+  "a robot that can't stop dancing",
+  "a grandma lifting weights",
+  "eating spaghetti without hands",
+  "a baby taking a selfie",
+  "a tourist with a very heavy suitcase",
+  "a penguin at the airport",
+  "a chef chasing a chicken",
+  "a monkey at a job interview",
+  "a cow on a skateboard",
+  "a sleepy bus driver",
+  "a crab at the disco",
+  "a giraffe in a small car",
+  "a mosquito in your room at night",
+  "brushing a lion's teeth",
+  "a pirate who lost his ship",
+  "a kangaroo in the library",
+  "a ballerina in big boots",
+  "a sneezing elephant",
+  "walking on a very hot beach",
+  "a ghost doing yoga",
+  "an octopus playing the drums",
+  "a hamster running in a wheel",
+  "a fish that wants to be a bird",
+  "a superhero who can't fly",
+  "an astronaut in the bath",
+  "a very lazy dragon",
+  "a shy ghost",
+  "building a snowman in summer",
+  "a cat watching a horror film",
+  "a teacher on a roller coaster",
+  "a duck crossing the road",
+  "a frog at a wedding",
+  "a pizza that is afraid of people",
+  "a mermaid at the gym",
+  "a sheep counting people",
+  "a bear in a shop",
+  "a witch on a broken broom"
+ ],
+ "nonsense": {
+  "s": [
+   [
+    "My grandmother",
+    "моя бабушка"
+   ],
+   [
+    "A small dinosaur",
+    "маленький динозавр"
+   ],
+   [
+    "The president of the cats",
+    "президент котов"
+   ],
+   [
+    "Our English teacher",
+    "наш учитель английского"
+   ],
+   [
+    "A very fat penguin",
+    "очень толстый пингвин"
+   ],
+   [
+    "My neighbour's goat",
+    "коза моего соседа"
+   ],
+   [
+    "A sad robot",
+    "грустный робот"
+   ],
+   [
+    "The king of potatoes",
+    "король картошки"
+   ],
+   [
+    "A ghost in pyjamas",
+    "привидение в пижаме"
+   ],
+   [
+    "My little brother",
+    "мой младший брат"
+   ],
+   [
+    "A pink elephant",
+    "розовый слон"
+   ],
+   [
+    "A shy crocodile",
+    "стеснительный крокодил"
+   ],
+   [
+    "A tired superhero",
+    "уставший супергерой"
+   ],
+   [
+    "Our fridge",
+    "наш холодильник"
+   ],
+   [
+    "A famous snail",
+    "знаменитая улитка"
+   ],
+   [
+    "A dancing tomato",
+    "танцующий помидор"
+   ],
+   [
+    "My best friend's grandmother",
+    "бабушка моего лучшего друга"
+   ],
+   [
+    "A very polite shark",
+    "очень вежливая акула"
+   ],
+   [
+    "The school director",
+    "директор школы"
+   ],
+   [
+    "A tiny dragon",
+    "крошечный дракон"
+   ],
+   [
+    "An alien with three heads",
+    "пришелец с тремя головами"
+   ]
+  ],
+  "v": [
+   [
+    "eats",
+    "ест"
+   ],
+   [
+    "sings to",
+    "поёт (кому)"
+   ],
+   [
+    "dances with",
+    "танцует с"
+   ],
+   [
+    "is afraid of",
+    "боится"
+   ],
+   [
+    "buys",
+    "покупает"
+   ],
+   [
+    "kisses",
+    "целует"
+   ],
+   [
+    "talks to",
+    "разговаривает с"
+   ],
+   [
+    "plays football with",
+    "играет в футбол с"
+   ],
+   [
+    "draws",
+    "рисует"
+   ],
+   [
+    "hides",
+    "прячет"
+   ],
+   [
+    "washes",
+    "моет"
+   ],
+   [
+    "loves",
+    "обожает"
+   ],
+   [
+    "takes a selfie with",
+    "делает селфи с"
+   ],
+   [
+    "argues with",
+    "спорит с"
+   ],
+   [
+    "cooks",
+    "готовит"
+   ],
+   [
+    "throws",
+    "бросает"
+   ],
+   [
+    "writes a letter to",
+    "пишет письмо (кому)"
+   ],
+   [
+    "teaches",
+    "учит"
+   ],
+   [
+    "sits on",
+    "сидит на"
+   ],
+   [
+    "looks for",
+    "ищет"
+   ]
+  ],
+  "o": [
+   [
+    "a pink sock",
+    "розовый носок"
+   ],
+   [
+    "three angry potatoes",
+    "три злые картошки"
+   ],
+   [
+    "a sleepy cat",
+    "сонный кот"
+   ],
+   [
+    "my homework",
+    "моя домашка"
+   ],
+   [
+    "a huge pizza",
+    "огромная пицца"
+   ],
+   [
+    "the moon",
+    "луна"
+   ],
+   [
+    "a small hamster",
+    "маленький хомяк"
+   ],
+   [
+    "an old sandwich",
+    "старый бутерброд"
+   ],
+   [
+    "two hundred bananas",
+    "двести бананов"
+   ],
+   [
+    "a cup of cold tea",
+    "чашка холодного чая"
+   ],
+   [
+    "a dancing chicken",
+    "танцующая курица"
+   ],
+   [
+    "a cheap umbrella",
+    "дешёвый зонт"
+   ],
+   [
+    "the teacher's phone",
+    "телефон учителя"
+   ],
+   [
+    "a nervous tomato",
+    "нервный помидор"
+   ],
+   [
+    "a confused penguin",
+    "растерянный пингвин"
+   ],
+   [
+    "fifty pancakes",
+    "пятьдесят блинов"
+   ],
+   [
+    "a broken guitar",
+    "сломанная гитара"
+   ],
+   [
+    "an angry banana",
+    "злой банан"
+   ],
+   [
+    "a very small horse",
+    "очень маленькая лошадь"
+   ],
+   [
+    "my grandmother's slippers",
+    "бабушкины тапочки"
+   ]
+  ],
+  "e": [
+   [
+    "every Monday",
+    "каждый понедельник"
+   ],
+   [
+    "in the fridge",
+    "в холодильнике"
+   ],
+   [
+    "at the disco",
+    "на дискотеке"
+   ],
+   [
+    "under the bed",
+    "под кроватью"
+   ],
+   [
+    "on the roof",
+    "на крыше"
+   ],
+   [
+    "at three in the morning",
+    "в три часа ночи"
+   ],
+   [
+    "in the shower",
+    "в душе"
+   ],
+   [
+    "at school",
+    "в школе"
+   ],
+   [
+    "on the bus",
+    "в автобусе"
+   ],
+   [
+    "on my birthday",
+    "в мой день рождения"
+   ],
+   [
+    "in London",
+    "в Лондоне"
+   ],
+   [
+    "with a big smile",
+    "с широкой улыбкой"
+   ],
+   [
+    "every summer",
+    "каждое лето"
+   ],
+   [
+    "in the middle of the lesson",
+    "посреди урока"
+   ],
+   [
+    "on a Tuesday night",
+    "во вторник вечером"
+   ],
+   [
+    "in the cinema",
+    "в кинотеатре"
+   ],
+   [
+    "behind the supermarket",
+    "за супермаркетом"
+   ],
+   [
+    "at a wedding",
+    "на свадьбе"
+   ],
+   [
+    "in the rain",
+    "под дождём"
+   ],
+   [
+    "on the Moon",
+    "на Луне"
+   ]
+  ]
+ }
+}

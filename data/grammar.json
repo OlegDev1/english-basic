@@ -1,0 +1,3002 @@
+[
+ {
+  "s": "My grandmother ___ a skateboard every morning.",
+  "o": [
+   "rides",
+   "ride",
+   "riding"
+  ],
+  "rule": "He / she / it в Present Simple: к глаголу добавляем -s. She rides.",
+  "tr": "Моя бабушка катается на скейте каждое утро."
+ },
+ {
+  "s": "Look! The cat ___ the piano.",
+  "o": [
+   "is playing",
+   "plays",
+   "play"
+  ],
+  "rule": "Look! — значит, прямо сейчас. Нужно am / is / are + глагол с -ing.",
+  "tr": "Смотри! Кот играет на пианино."
+ },
+ {
+  "s": "There ___ three penguins in my fridge.",
+  "o": [
+   "are",
+   "is",
+   "am"
+  ],
+  "rule": "There are + много предметов. There is + один.",
+  "tr": "У меня в холодильнике три пингвина."
+ },
+ {
+  "s": "Yesterday my dog ___ my homework.",
+  "o": [
+   "ate",
+   "eats",
+   "eated"
+  ],
+  "rule": "Yesterday — прошедшее время. eat — неправильный глагол: eat → ate.",
+  "tr": "Вчера моя собака съела мою домашку."
+ },
+ {
+  "s": "I ___ a dinosaur. I'm just very tall.",
+  "o": [
+   "am not",
+   "not",
+   "don't"
+  ],
+  "rule": "Отрицание с am / is / are: I am not, she is not.",
+  "tr": "Я не динозавр. Я просто очень высокий."
+ },
+ {
+  "s": "___ your hamster speak French?",
+  "o": [
+   "Does",
+   "Do",
+   "Is"
+  ],
+  "rule": "Вопрос про he / she / it в Present Simple начинается с Does.",
+  "tr": "Твой хомяк говорит по-французски?"
+ },
+ {
+  "s": "This banana is ___ than my brother.",
+  "o": [
+   "bigger",
+   "more big",
+   "biggest"
+  ],
+  "rule": "Сравнение коротких слов: big → bigger than. Буква g удваивается.",
+  "tr": "Этот банан больше моего брата."
+ },
+ {
+  "s": "Tomorrow we are ___ to fly to the Moon.",
+  "o": [
+   "going",
+   "go",
+   "goes"
+  ],
+  "rule": "Планы на будущее: am / is / are going to + глагол.",
+  "tr": "Завтра мы собираемся полететь на Луну."
+ },
+ {
+  "s": "My teacher has ___ umbrella with a duck on it.",
+  "o": [
+   "an",
+   "a",
+   "— (ничего)"
+  ],
+  "rule": "Перед гласным звуком ставим an: an umbrella, an apple.",
+  "tr": "У моего учителя зонт с уточкой."
+ },
+ {
+  "s": "The potatoes ___ in the garden last night.",
+  "o": [
+   "danced",
+   "dance",
+   "dancing"
+  ],
+  "rule": "Last night — прошедшее время. Правильный глагол + -ed: dance → danced.",
+  "tr": "Прошлой ночью картошка танцевала в саду."
+ },
+ {
+  "s": "Shhh! The baby elephant ___.",
+  "o": [
+   "is sleeping",
+   "sleeps",
+   "sleep"
+  ],
+  "rule": "Тсс! — значит, происходит прямо сейчас: is + глагол с -ing.",
+  "tr": "Тсс! Слонёнок спит."
+ },
+ {
+  "s": "I can ___ with my nose.",
+  "o": [
+   "sing",
+   "sings",
+   "singing"
+  ],
+  "rule": "После can глагол не меняется: I can sing, she can sing.",
+  "tr": "Я умею петь носом."
+ },
+ {
+  "s": "How ___ sausages do you have in your pocket?",
+  "o": [
+   "many",
+   "much",
+   "lot"
+  ],
+  "rule": "Сосиски можно посчитать — many. Нельзя посчитать (вода, кетчуп) — much.",
+  "tr": "Сколько сосисок у тебя в кармане?"
+ },
+ {
+  "s": "How ___ ketchup do you put on your ice cream?",
+  "o": [
+   "much",
+   "many",
+   "lot"
+  ],
+  "rule": "Кетчуп штуками не посчитаешь — much.",
+  "tr": "Сколько кетчупа ты кладёшь на мороженое?"
+ },
+ {
+  "s": "My cat is the ___ cat in the world.",
+  "o": [
+   "laziest",
+   "lazier",
+   "most lazy"
+  ],
+  "rule": "Самый-самый: the + -est. lazy → laziest (y меняется на i).",
+  "tr": "Мой кот — самый ленивый кот в мире."
+ },
+ {
+  "s": "Did you ___ a ghost in the kitchen?",
+  "o": [
+   "see",
+   "saw",
+   "seeing"
+  ],
+  "rule": "После Did глагол в начальной форме: Did you see? А не saw!",
+  "tr": "Ты видел привидение на кухне?"
+ },
+ {
+  "s": "Elephants ___ fly. That's very sad.",
+  "o": [
+   "can't",
+   "don't can",
+   "aren't"
+  ],
+  "rule": "Не умеют — can't + глагол.",
+  "tr": "Слоны не умеют летать. Это очень грустно."
+ },
+ {
+  "s": "There ___ a crocodile in the bath!",
+  "o": [
+   "is",
+   "are",
+   "be"
+  ],
+  "rule": "There is + один предмет.",
+  "tr": "В ванной крокодил!"
+ },
+ {
+  "s": "Mr Potato ___ got a new car.",
+  "o": [
+   "has",
+   "have",
+   "is"
+  ],
+  "rule": "He / she / it → has got. I / you / we / they → have got.",
+  "tr": "У мистера Картошки новая машина."
+ },
+ {
+  "s": "We ___ at a crazy party yesterday.",
+  "o": [
+   "were",
+   "was",
+   "are"
+  ],
+  "rule": "Прошедшее от be: I / he / she / it was, we / you / they were.",
+  "tr": "Вчера мы были на безумной вечеринке."
+ },
+ {
+  "s": "Please don't ___ on the teacher's chair!",
+  "o": [
+   "dance",
+   "dancing",
+   "dances"
+  ],
+  "rule": "Запрет: Don't + глагол без изменений.",
+  "tr": "Пожалуйста, не танцуй на стуле учителя!"
+ },
+ {
+  "s": "My uncle ___ sleeping in a tree.",
+  "o": [
+   "likes",
+   "like",
+   "liking"
+  ],
+  "rule": "He → likes (с -s). После like часто идёт глагол с -ing.",
+  "tr": "Мой дядя любит спать на дереве."
+ },
+ {
+  "s": "I'm ___ a sandwich for my pet spider.",
+  "o": [
+   "making",
+   "make",
+   "makes"
+  ],
+  "rule": "am / is / are + глагол с -ing — действие прямо сейчас.",
+  "tr": "Я делаю бутерброд для своего домашнего паука."
+ },
+ {
+  "s": "___ you a robot? Be honest.",
+  "o": [
+   "Are",
+   "Is",
+   "Do"
+  ],
+  "rule": "Вопрос к you с глаголом be: Are you…?",
+  "tr": "Ты робот? Только честно."
+ },
+ {
+  "s": "The pizza is ___ the table, under the cat.",
+  "o": [
+   "on",
+   "in",
+   "at"
+  ],
+  "rule": "На поверхности — on: on the table.",
+  "tr": "Пицца на столе. Под котом."
+ },
+ {
+  "s": "I go to the gym ___ Mondays. Then I sleep for a week.",
+  "o": [
+   "on",
+   "in",
+   "at"
+  ],
+  "rule": "Дни недели — с on: on Monday, on Mondays.",
+  "tr": "Я хожу в спортзал по понедельникам. Потом сплю неделю."
+ },
+ {
+  "s": "Two ___ live in my shoe.",
+  "o": [
+   "mice",
+   "mouses",
+   "mouse"
+  ],
+  "rule": "Исключение: one mouse → two mice.",
+  "tr": "В моём ботинке живут две мыши."
+ },
+ {
+  "s": "My feet ___ very tired after the disco.",
+  "o": [
+   "are",
+   "is",
+   "am"
+  ],
+  "rule": "foot → feet (много ног). Много — значит are.",
+  "tr": "Мои ноги очень устали после дискотеки."
+ },
+ {
+  "s": "OK, I ___ marry this pizza. It's love.",
+  "o": [
+   "will",
+   "am",
+   "do"
+  ],
+  "rule": "Решение, принятое прямо сейчас: will + глагол.",
+  "tr": "Ладно, я женюсь на этой пицце. Это любовь."
+ },
+ {
+  "s": "My brother ___ like Mondays.",
+  "o": [
+   "doesn't",
+   "don't",
+   "isn't"
+  ],
+  "rule": "Отрицание с he / she / it: doesn't + глагол.",
+  "tr": "Мой брат не любит понедельники."
+ },
+ {
+  "s": "My hamster ___ to the gym every Saturday.",
+  "o": [
+   "goes",
+   "go",
+   "going"
+  ],
+  "rule": "He / she / it → -s. После o добавляем -es: go → goes.",
+  "tr": "Мой хомяк ходит в спортзал каждую субботу."
+ },
+ {
+  "s": "The robot ___ a cake right now.",
+  "o": [
+   "is baking",
+   "bakes",
+   "bake"
+  ],
+  "rule": "right now — прямо сейчас: am / is / are + глагол с -ing.",
+  "tr": "Робот сейчас печёт торт."
+ },
+ {
+  "s": "There ___ any milk in the fridge, only a penguin.",
+  "o": [
+   "isn't",
+   "aren't",
+   "not"
+  ],
+  "rule": "Молоко штуками не считают → there isn't any milk.",
+  "tr": "В холодильнике нет молока, только пингвин."
+ },
+ {
+  "s": "Are there ___ dragons in your garden?",
+  "o": [
+   "any",
+   "some",
+   "a"
+  ],
+  "rule": "В вопросах и отрицаниях — any. В утверждениях — some.",
+  "tr": "В твоём саду есть драконы?"
+ },
+ {
+  "s": "I have ___ crazy idea!",
+  "o": [
+   "a",
+   "an",
+   "— (ничего)"
+  ],
+  "rule": "crazy начинается с согласного звука → a.",
+  "tr": "У меня есть безумная идея!"
+ },
+ {
+  "s": "Look at ___ sheep over there! They're wearing sunglasses.",
+  "o": [
+   "those",
+   "that",
+   "this"
+  ],
+  "rule": "Много и далеко → those. Один и далеко → that.",
+  "tr": "Посмотри на тех овец! Они в солнечных очках."
+ },
+ {
+  "s": "___ is my grandmother's motorbike.",
+  "o": [
+   "This",
+   "These",
+   "Those"
+  ],
+  "rule": "Один предмет рядом → this.",
+  "tr": "Это мотоцикл моей бабушки."
+ },
+ {
+  "s": "Last summer we ___ a ghost in the hotel.",
+  "o": [
+   "saw",
+   "see",
+   "seed"
+  ],
+  "rule": "see — неправильный глагол: see → saw.",
+  "tr": "Прошлым летом мы видели привидение в отеле."
+ },
+ {
+  "s": "My dad ___ the dishes. He gives them to the dog.",
+  "o": [
+   "never washes",
+   "wash never",
+   "never wash"
+  ],
+  "rule": "never стоит перед глаголом. И не забудь -es для he: washes.",
+  "tr": "Мой папа никогда не моет посуду. Он отдаёт её собаке."
+ },
+ {
+  "s": "My grandma is ___ than a cheetah.",
+  "o": [
+   "faster",
+   "more fast",
+   "fastest"
+  ],
+  "rule": "Короткое слово: fast → faster than.",
+  "tr": "Моя бабушка быстрее гепарда."
+ },
+ {
+  "s": "This is the ___ day of my life! I found a sandwich in my pocket.",
+  "o": [
+   "best",
+   "goodest",
+   "better"
+  ],
+  "rule": "Исключение: good → better → the best.",
+  "tr": "Это лучший день в моей жизни! Я нашёл бутерброд в кармане."
+ },
+ {
+  "s": "My cat is ___ than my dog.",
+  "o": [
+   "fatter",
+   "more fat",
+   "fater"
+  ],
+  "rule": "fat → fatter: в коротком слове последняя согласная удваивается.",
+  "tr": "Мой кот толще моей собаки."
+ },
+ {
+  "s": "Homework is ___ than a documentary about stones.",
+  "o": [
+   "more boring",
+   "boringer",
+   "most boring"
+  ],
+  "rule": "Длинные слова: more + слово + than.",
+  "tr": "Домашка скучнее документалки про камни."
+ },
+ {
+  "s": "We ___ to the beach yesterday, but it was closed for penguins.",
+  "o": [
+   "went",
+   "goed",
+   "go"
+  ],
+  "rule": "go — неправильный глагол: go → went.",
+  "tr": "Вчера мы поехали на пляж, но он был закрыт для пингвинов."
+ },
+ {
+  "s": "___ you like pineapple on pizza?",
+  "o": [
+   "Do",
+   "Does",
+   "Are"
+  ],
+  "rule": "Вопрос к you в Present Simple начинается с Do.",
+  "tr": "Ты любишь ананас на пицце?"
+ },
+ {
+  "s": "Where ___ my socks? I can't find them!",
+  "o": [
+   "are",
+   "is",
+   "am"
+  ],
+  "rule": "socks — много → are.",
+  "tr": "Где мои носки? Не могу их найти!"
+ },
+ {
+  "s": "This is my sister. ___ name is Banana.",
+  "o": [
+   "Her",
+   "His",
+   "She"
+  ],
+  "rule": "Её (о девочке) — her. Его — his.",
+  "tr": "Это моя сестра. Её зовут Банана."
+ },
+ {
+  "s": "This is my uncle. ___ pet is a crocodile.",
+  "o": [
+   "His",
+   "Her",
+   "He"
+  ],
+  "rule": "О мужчине: his — его.",
+  "tr": "Это мой дядя. Его питомец — крокодил."
+ },
+ {
+  "s": "The aliens are here. ___ spaceship is in my garden.",
+  "o": [
+   "Their",
+   "There",
+   "They're"
+  ],
+  "rule": "their — их. there — там. they're = they are.",
+  "tr": "Пришельцы здесь. Их корабль у меня в саду."
+ },
+ {
+  "s": "My cat loves ___. He sleeps on my head.",
+  "o": [
+   "me",
+   "I",
+   "my"
+  ],
+  "rule": "После глагола — me, him, her, us, them.",
+  "tr": "Мой кот любит меня. Он спит у меня на голове."
+ },
+ {
+  "s": "Can you help ___? We're in the lift with a horse.",
+  "o": [
+   "us",
+   "we",
+   "our"
+  ],
+  "rule": "Нас (после глагола) — us.",
+  "tr": "Можете помочь нам? Мы в лифте с лошадью."
+ },
+ {
+  "s": "Don't talk to ___. They're angry potatoes.",
+  "o": [
+   "them",
+   "they",
+   "their"
+  ],
+  "rule": "Их (после глагола или предлога) — them.",
+  "tr": "Не разговаривай с ними. Это злые картошки."
+ },
+ {
+  "s": "I'm ___ to eat ten pizzas tonight.",
+  "o": [
+   "going",
+   "go",
+   "goes"
+  ],
+  "rule": "План: I'm going to + глагол.",
+  "tr": "Сегодня вечером я собираюсь съесть десять пицц."
+ },
+ {
+  "s": "Look at those black clouds! It ___ rain.",
+  "o": [
+   "is going to",
+   "will going to",
+   "goes to"
+  ],
+  "rule": "Видишь признаки (тучи) → is going to.",
+  "tr": "Посмотри на эти тучи! Сейчас пойдёт дождь."
+ },
+ {
+  "s": "I think robots ___ do our homework in the future.",
+  "o": [
+   "will",
+   "are",
+   "do"
+  ],
+  "rule": "Прогноз на будущее: will + глагол.",
+  "tr": "Думаю, в будущем роботы будут делать за нас домашку."
+ },
+ {
+  "s": "You ___ eat ice cream for breakfast. It's a bad idea.",
+  "o": [
+   "shouldn't",
+   "don't should",
+   "not should"
+  ],
+  "rule": "Совет «не стоит»: shouldn't + глагол.",
+  "tr": "Не стоит есть мороженое на завтрак. Плохая идея."
+ },
+ {
+  "s": "You ___ wear a seatbelt on a dragon. It's the law.",
+  "o": [
+   "must",
+   "musts",
+   "must to"
+  ],
+  "rule": "must + глагол без to. И без -s.",
+  "tr": "На драконе нужно пристёгиваться. Таков закон."
+ },
+ {
+  "s": "My grandma ___ swim, but she can surf.",
+  "o": [
+   "can't",
+   "doesn't can",
+   "isn't can"
+  ],
+  "rule": "Не умеет — can't + глагол.",
+  "tr": "Моя бабушка не умеет плавать, но умеет сёрфить."
+ },
+ {
+  "s": "Yesterday I ___ my homework. My cat did it.",
+  "o": [
+   "didn't do",
+   "didn't did",
+   "not did"
+  ],
+  "rule": "После didn't — глагол в начальной форме.",
+  "tr": "Вчера я не делал домашку. Её сделал мой кот."
+ },
+ {
+  "s": "___ did you put my shoes? In the fridge?!",
+  "o": [
+   "Where",
+   "When",
+   "Who"
+  ],
+  "rule": "Где? Куда? — Where.",
+  "tr": "Куда ты положил мои ботинки? В холодильник?!"
+ },
+ {
+  "s": "___ is that man in a banana costume?",
+  "o": [
+   "Who",
+   "What",
+   "Where"
+  ],
+  "rule": "Кто? — Who.",
+  "tr": "Кто тот мужчина в костюме банана?"
+ },
+ {
+  "s": "___ do you go to bed? — At 5 a.m. I'm an owl.",
+  "o": [
+   "When",
+   "Who",
+   "Why"
+  ],
+  "rule": "Когда? — When.",
+  "tr": "Когда ты ложишься спать? — В пять утра. Я сова."
+ },
+ {
+  "s": "I was ___ when the ghost said hello.",
+  "o": [
+   "sleeping",
+   "sleep",
+   "slept"
+  ],
+  "rule": "Past Continuous: was / were + -ing — что происходило в тот момент.",
+  "tr": "Я спал, когда привидение сказало «привет»."
+ },
+ {
+  "s": "We ___ dancing when the music stopped.",
+  "o": [
+   "were",
+   "was",
+   "are"
+  ],
+  "rule": "we → were (Past Continuous).",
+  "tr": "Мы танцевали, когда музыка остановилась."
+ },
+ {
+  "s": "I have never ___ a real dinosaur.",
+  "o": [
+   "seen",
+   "saw",
+   "see"
+  ],
+  "rule": "Present Perfect: have + третья форма. see → saw → seen.",
+  "tr": "Я никогда не видел настоящего динозавра."
+ },
+ {
+  "s": "Have you ever ___ snails? — Yes, in France.",
+  "o": [
+   "eaten",
+   "ate",
+   "eat"
+  ],
+  "rule": "have + третья форма: eat → ate → eaten.",
+  "tr": "Ты когда-нибудь ел улиток? — Да, во Франции."
+ },
+ {
+  "s": "She ___ already eaten my sandwich!",
+  "o": [
+   "has",
+   "have",
+   "is"
+  ],
+  "rule": "She → has + третья форма.",
+  "tr": "Она уже съела мой бутерброд!"
+ },
+ {
+  "s": "Three ___ are driving the bus.",
+  "o": [
+   "children",
+   "childs",
+   "childrens"
+  ],
+  "rule": "Исключение: child → children.",
+  "tr": "Автобус ведут трое детей."
+ },
+ {
+  "s": "Crocodiles have a lot of ___.",
+  "o": [
+   "teeth",
+   "tooths",
+   "teeths"
+  ],
+  "rule": "Исключение: tooth → teeth.",
+  "tr": "У крокодилов много зубов."
+ },
+ {
+  "s": "Two ___ are dancing on the roof.",
+  "o": [
+   "women",
+   "womans",
+   "woman"
+  ],
+  "rule": "Исключение: woman → women.",
+  "tr": "Две женщины танцуют на крыше."
+ },
+ {
+  "s": "I need ___ new phone. A cat ate my old one.",
+  "o": [
+   "a",
+   "an",
+   "the"
+  ],
+  "rule": "Какой-то один, впервые упоминаем → a.",
+  "tr": "Мне нужен новый телефон. Кот съел старый."
+ },
+ {
+  "s": "___ Moon is very big tonight.",
+  "o": [
+   "The",
+   "A",
+   "An"
+  ],
+  "rule": "Единственная в своём роде вещь → the: the Moon, the sun.",
+  "tr": "Луна сегодня очень большая."
+ },
+ {
+  "s": "My birthday is ___ May.",
+  "o": [
+   "in",
+   "on",
+   "at"
+  ],
+  "rule": "Месяцы — с in: in May.",
+  "tr": "Мой день рождения в мае."
+ },
+ {
+  "s": "The party starts ___ 8 o'clock.",
+  "o": [
+   "at",
+   "in",
+   "on"
+  ],
+  "rule": "Точное время — с at: at 8 o'clock.",
+  "tr": "Вечеринка начинается в восемь."
+ },
+ {
+  "s": "The cat is ___ the box. Only its tail is outside.",
+  "o": [
+   "in",
+   "on",
+   "at"
+  ],
+  "rule": "Внутри — in.",
+  "tr": "Кот в коробке. Снаружи только хвост."
+ },
+ {
+  "s": "How ___ money does the robot have? — Zero.",
+  "o": [
+   "much",
+   "many",
+   "lot"
+  ],
+  "rule": "money штуками не считают → much.",
+  "tr": "Сколько денег у робота? — Ноль."
+ },
+ {
+  "s": "I have ___ friends. Mostly cats.",
+  "o": [
+   "a lot of",
+   "a lot",
+   "much"
+  ],
+  "rule": "a lot of + существительное. much — только для неисчисляемого.",
+  "tr": "У меня много друзей. В основном коты."
+ },
+ {
+  "s": "There's ___ sugar in my tea. Can I have some more?",
+  "o": [
+   "a little",
+   "a few",
+   "many"
+  ],
+  "rule": "Сахар не считают → a little. a few — для штук.",
+  "tr": "В моём чае мало сахара. Можно ещё?"
+ },
+ {
+  "s": "I have ___ questions for the alien.",
+  "o": [
+   "a few",
+   "a little",
+   "much"
+  ],
+  "rule": "Вопросы можно посчитать → a few.",
+  "tr": "У меня есть несколько вопросов к пришельцу."
+ },
+ {
+  "s": "Please ___ the door. The dragon is coming!",
+  "o": [
+   "close",
+   "closes",
+   "closing"
+  ],
+  "rule": "Просьба (повелительное наклонение) — глагол без изменений.",
+  "tr": "Пожалуйста, закрой дверь. Дракон идёт!"
+ },
+ {
+  "s": "___ quiet! The baby dinosaur is sleeping.",
+  "o": [
+   "Be",
+   "Are",
+   "Is"
+  ],
+  "rule": "Повелительное от to be — Be: Be quiet!",
+  "tr": "Тихо! Динозаврик спит."
+ },
+ {
+  "s": "Let's ___ a party for the penguins!",
+  "o": [
+   "have",
+   "having",
+   "to have"
+  ],
+  "rule": "После Let's — глагол без to.",
+  "tr": "Давай устроим вечеринку для пингвинов!"
+ },
+ {
+  "s": "I want ___ a pilot. Or a potato.",
+  "o": [
+   "to be",
+   "be",
+   "being"
+  ],
+  "rule": "want + to + глагол.",
+  "tr": "Я хочу стать пилотом. Или картошкой."
+ },
+ {
+  "s": "My dog enjoys ___ my shoes.",
+  "o": [
+   "eating",
+   "eat",
+   "to eats"
+  ],
+  "rule": "После enjoy — глагол с -ing.",
+  "tr": "Моя собака обожает грызть мои ботинки."
+ },
+ {
+  "s": "I'm really good ___ sleeping.",
+  "o": [
+   "at",
+   "in",
+   "on"
+  ],
+  "rule": "Хорошо уметь что-то — good at.",
+  "tr": "У меня отлично получается спать."
+ },
+ {
+  "s": "He is afraid ___ butterflies.",
+  "o": [
+   "of",
+   "from",
+   "about"
+  ],
+  "rule": "Бояться — afraid of (а не from!).",
+  "tr": "Он боится бабочек."
+ },
+ {
+  "s": "My brother is interested ___ dinosaurs.",
+  "o": [
+   "in",
+   "on",
+   "about"
+  ],
+  "rule": "Интересоваться — interested in.",
+  "tr": "Мой брат интересуется динозаврами."
+ },
+ {
+  "s": "The penguin ___ swim yesterday because the pool was empty.",
+  "o": [
+   "couldn't",
+   "can't",
+   "didn't can"
+  ],
+  "rule": "Не мог в прошлом — couldn't.",
+  "tr": "Вчера пингвин не смог поплавать: бассейн был пустой."
+ },
+ {
+  "s": "When I was five, I ___ a superhero.",
+  "o": [
+   "was",
+   "were",
+   "am"
+  ],
+  "rule": "Прошедшее от be: I → was.",
+  "tr": "Когда мне было пять, я был супергероем."
+ },
+ {
+  "s": "___ you at the disco last night? I saw a dancing cow.",
+  "o": [
+   "Were",
+   "Was",
+   "Did"
+  ],
+  "rule": "you → were: Were you…?",
+  "tr": "Ты был вчера на дискотеке? Я видел танцующую корову."
+ },
+ {
+  "s": "Where ___ you buy that hat yesterday? It's amazing.",
+  "o": [
+   "did",
+   "were",
+   "do"
+  ],
+  "rule": "Вопрос в Past Simple: did + you + глагол.",
+  "tr": "Где ты вчера купил эту шляпу? Она потрясающая."
+ },
+ {
+  "s": "The chicken ___ across the road. Why? Nobody knows.",
+  "o": [
+   "ran",
+   "runned",
+   "run"
+  ],
+  "rule": "run — неправильный глагол: run → ran.",
+  "tr": "Курица перебежала дорогу. Зачем? Никто не знает."
+ },
+ {
+  "s": "My cat can ___. She just doesn't want to.",
+  "o": [
+   "talk",
+   "talks",
+   "to talk"
+  ],
+  "rule": "can + глагол без to и без -s.",
+  "tr": "Моя кошка умеет говорить. Просто не хочет."
+ },
+ {
+  "s": "Whose sock is this? — It's ___.",
+  "o": [
+   "mine",
+   "my",
+   "me"
+  ],
+  "rule": "Без существительного после — mine (мой).",
+  "tr": "Чей это носок? — Мой."
+ },
+ {
+  "s": "This castle isn't yours. It's ___!",
+  "o": [
+   "ours",
+   "our",
+   "us"
+  ],
+  "rule": "ours — наш (без существительного после).",
+  "tr": "Этот замок не ваш. Он наш!"
+ },
+ {
+  "s": "Is this your dragon? — Yes, it ___.",
+  "o": [
+   "is",
+   "does",
+   "it's"
+  ],
+  "rule": "Короткий ответ: Yes, it is. В конце не сокращают.",
+  "tr": "Это твой дракон? — Да."
+ },
+ {
+  "s": "Do you like Mondays? — No, I ___.",
+  "o": [
+   "don't",
+   "not",
+   "doesn't"
+  ],
+  "rule": "Короткий ответ: No, I don't.",
+  "tr": "Ты любишь понедельники? — Нет."
+ },
+ {
+  "s": "The teacher speaks very ___. I fall asleep.",
+  "o": [
+   "slowly",
+   "slow",
+   "slows"
+  ],
+  "rule": "Как говорит? — наречие: slow → slowly.",
+  "tr": "Учитель говорит очень медленно. Я засыпаю."
+ },
+ {
+  "s": "My grandma drives very ___. Even the police can't catch her.",
+  "o": [
+   "fast",
+   "fastly",
+   "faster"
+  ],
+  "rule": "fast — исключение: наречие тоже fast. fastly не бывает.",
+  "tr": "Моя бабушка водит очень быстро. Даже полиция не может её догнать."
+ },
+ {
+  "s": "I usually ___ up at 7, but today the cat woke me up at 4.",
+  "o": [
+   "get",
+   "gets",
+   "getting"
+  ],
+  "rule": "I + Present Simple — глагол без -s.",
+  "tr": "Обычно я встаю в семь, но сегодня кот разбудил меня в четыре."
+ },
+ {
+  "s": "My grandpa ___ funny videos with his goat.",
+  "o": [
+   "makes",
+   "make",
+   "making"
+  ],
+  "rule": "He → глагол с -s: makes.",
+  "tr": "Мой дедушка снимает смешные видео со своей козой."
+ },
+ {
+  "s": "Penguins ___ live in the desert.",
+  "o": [
+   "don't",
+   "doesn't",
+   "aren't"
+  ],
+  "rule": "They (penguins) → don't + глагол.",
+  "tr": "Пингвины не живут в пустыне."
+ },
+ {
+  "s": "___ your fridge talk at night?",
+  "o": [
+   "Does",
+   "Do",
+   "Is"
+  ],
+  "rule": "Вопрос про it в Present Simple — Does.",
+  "tr": "Твой холодильник разговаривает по ночам?"
+ },
+ {
+  "s": "My sister ___ watch horror films. She's scared of cartoons.",
+  "o": [
+   "doesn't",
+   "don't",
+   "isn't"
+  ],
+  "rule": "She → doesn't + глагол.",
+  "tr": "Моя сестра не смотрит ужастики. Она боится мультиков."
+ },
+ {
+  "s": "The teacher ___ a funny hat today.",
+  "o": [
+   "is wearing",
+   "wear",
+   "wears not"
+  ],
+  "rule": "today, сейчас — am / is / are + -ing.",
+  "tr": "Учитель сегодня в смешной шляпе."
+ },
+ {
+  "s": "Why ___ the dog sitting on the roof?",
+  "o": [
+   "is",
+   "does",
+   "are"
+  ],
+  "rule": "Вопрос в Present Continuous: Why is + it + -ing?",
+  "tr": "Почему собака сидит на крыше?"
+ },
+ {
+  "s": "We ___ not dancing. We're fighting a bee.",
+  "o": [
+   "are",
+   "is",
+   "do"
+  ],
+  "rule": "we → are + -ing.",
+  "tr": "Мы не танцуем. Мы сражаемся с пчелой."
+ },
+ {
+  "s": "Listen! Somebody ___ in the fridge.",
+  "o": [
+   "is singing",
+   "sings",
+   "sing"
+  ],
+  "rule": "Listen! — прямо сейчас: is + -ing.",
+  "tr": "Слушай! Кто-то поёт в холодильнике."
+ },
+ {
+  "s": "Yesterday a seagull ___ my chips.",
+  "o": [
+   "stole",
+   "stealed",
+   "steal"
+  ],
+  "rule": "steal → stole (неправильный глагол).",
+  "tr": "Вчера чайка украла мою картошку фри."
+ },
+ {
+  "s": "Last night I ___ about a talking potato.",
+  "o": [
+   "dreamed",
+   "dream",
+   "dreaming"
+  ],
+  "rule": "Прошедшее время: dream → dreamed (или dreamt).",
+  "tr": "Прошлой ночью мне приснилась говорящая картошка."
+ },
+ {
+  "s": "Did the robot ___ the cake?",
+  "o": [
+   "eat",
+   "ate",
+   "eaten"
+  ],
+  "rule": "После Did — глагол в начальной форме.",
+  "tr": "Робот съел торт?"
+ },
+ {
+  "s": "My cat ___ to school with me yesterday.",
+  "o": [
+   "came",
+   "comed",
+   "come"
+  ],
+  "rule": "come → came.",
+  "tr": "Вчера мой кот пришёл со мной в школу."
+ },
+ {
+  "s": "We ___ a dinosaur in the park last Sunday.",
+  "o": [
+   "found",
+   "finded",
+   "find"
+  ],
+  "rule": "find → found.",
+  "tr": "В прошлое воскресенье мы нашли динозавра в парке."
+ },
+ {
+  "s": "I ___ my phone in the soup. Again.",
+  "o": [
+   "dropped",
+   "droped",
+   "drop"
+  ],
+  "rule": "drop → dropped: согласная удваивается.",
+  "tr": "Я уронил телефон в суп. Снова."
+ },
+ {
+  "s": "She ___ the bus because she was talking to a pigeon.",
+  "o": [
+   "missed",
+   "miss",
+   "missing"
+  ],
+  "rule": "Прошедшее время, правильный глагол: miss → missed.",
+  "tr": "Она опоздала на автобус, потому что разговаривала с голубем."
+ },
+ {
+  "s": "The ghost ___ very happy at the party.",
+  "o": [
+   "was",
+   "were",
+   "is be"
+  ],
+  "rule": "he / she / it → was.",
+  "tr": "Привидение было очень счастливо на вечеринке."
+ },
+ {
+  "s": "My shoes ___ in the fish tank this morning.",
+  "o": [
+   "were",
+   "was",
+   "are been"
+  ],
+  "rule": "shoes — много → were.",
+  "tr": "Сегодня утром мои ботинки были в аквариуме."
+ },
+ {
+  "s": "There ___ a giraffe in our classroom yesterday.",
+  "o": [
+   "was",
+   "were",
+   "is"
+  ],
+  "rule": "Прошлое + один → there was.",
+  "tr": "Вчера в нашем классе был жираф."
+ },
+ {
+  "s": "There ___ two hundred cats at my birthday party.",
+  "o": [
+   "were",
+   "was",
+   "is"
+  ],
+  "rule": "Прошлое + много → there were.",
+  "tr": "На моём дне рождения было двести котов."
+ },
+ {
+  "s": "Is there ___ cheese in the house? The mouse is asking.",
+  "o": [
+   "any",
+   "many",
+   "a"
+  ],
+  "rule": "Вопрос + неисчисляемое → any.",
+  "tr": "В доме есть сыр? Мышь спрашивает."
+ },
+ {
+  "s": "I can see ___ cows on the beach.",
+  "o": [
+   "some",
+   "any",
+   "much"
+  ],
+  "rule": "Утверждение + много штук → some.",
+  "tr": "Я вижу на пляже несколько коров."
+ },
+ {
+  "s": "There are ___ apples left. The horse ate them all.",
+  "o": [
+   "no",
+   "any",
+   "some"
+  ],
+  "rule": "no = «ни одного» в утвердительной фразе.",
+  "tr": "Яблок не осталось. Лошадь съела все."
+ },
+ {
+  "s": "My brother ___ ride a unicycle when he was six.",
+  "o": [
+   "could",
+   "can",
+   "coulds"
+  ],
+  "rule": "Умел в прошлом — could.",
+  "tr": "Мой брат умел кататься на моноцикле, когда ему было шесть."
+ },
+ {
+  "s": "___ you speak to animals? I need help with my parrot.",
+  "o": [
+   "Can",
+   "Do",
+   "Are"
+  ],
+  "rule": "Умеешь ли — Can you…?",
+  "tr": "Ты умеешь говорить с животными? Мне нужна помощь с попугаем."
+ },
+ {
+  "s": "You ___ feed the crocodile. It's dangerous!",
+  "o": [
+   "mustn't",
+   "don't must",
+   "not must"
+  ],
+  "rule": "Запрет — mustn't + глагол.",
+  "tr": "Нельзя кормить крокодила. Это опасно!"
+ },
+ {
+  "s": "I ___ to wear a uniform at school. It's pink.",
+  "o": [
+   "have",
+   "has",
+   "must to"
+  ],
+  "rule": "I → have to (приходится).",
+  "tr": "Мне приходится носить форму в школе. Она розовая."
+ },
+ {
+  "s": "She ___ to walk the dragon every evening.",
+  "o": [
+   "has",
+   "have",
+   "must"
+  ],
+  "rule": "She → has to.",
+  "tr": "Ей приходится выгуливать дракона каждый вечер."
+ },
+ {
+  "s": "You ___ go to bed. It's 3 a.m. and you're talking to the fridge.",
+  "o": [
+   "should",
+   "should to",
+   "shoulds"
+  ],
+  "rule": "Совет — should + глагол без to.",
+  "tr": "Тебе стоит лечь спать. Три часа ночи, а ты разговариваешь с холодильником."
+ },
+ {
+  "s": "I'm ___ to paint my room purple tomorrow.",
+  "o": [
+   "going",
+   "go",
+   "gone"
+  ],
+  "rule": "План: am going to + глагол.",
+  "tr": "Завтра я собираюсь покрасить комнату в фиолетовый."
+ },
+ {
+  "s": "My parents ___ going to be very surprised.",
+  "o": [
+   "are",
+   "is",
+   "am"
+  ],
+  "rule": "parents → are going to.",
+  "tr": "Мои родители очень удивятся."
+ },
+ {
+  "s": "Don't worry, I ___ help you find your sock.",
+  "o": [
+   "will",
+   "am",
+   "shall to"
+  ],
+  "rule": "Обещание прямо сейчас — will.",
+  "tr": "Не волнуйся, я помогу найти твой носок."
+ },
+ {
+  "s": "Maybe it ___ snow tomorrow. In July.",
+  "o": [
+   "will",
+   "is",
+   "does"
+  ],
+  "rule": "Предположение о будущем — will.",
+  "tr": "Может, завтра пойдёт снег. В июле."
+ },
+ {
+  "s": "My homework is ___ than yours.",
+  "o": [
+   "worse",
+   "badder",
+   "more bad"
+  ],
+  "rule": "Исключение: bad → worse → the worst.",
+  "tr": "Моя домашка хуже твоей."
+ },
+ {
+  "s": "This is the ___ pizza in the world. It has fish and jam on it.",
+  "o": [
+   "worst",
+   "baddest",
+   "most bad"
+  ],
+  "rule": "bad → the worst.",
+  "tr": "Это худшая пицца в мире. На ней рыба и варенье."
+ },
+ {
+  "s": "My house is ___ from school than the Moon.",
+  "o": [
+   "farther",
+   "farer",
+   "more far"
+  ],
+  "rule": "far → farther (или further).",
+  "tr": "Мой дом дальше от школы, чем Луна."
+ },
+ {
+  "s": "A snail is ___ than a turtle.",
+  "o": [
+   "slower",
+   "more slow",
+   "slowest"
+  ],
+  "rule": "slow → slower than.",
+  "tr": "Улитка медленнее черепахи."
+ },
+ {
+  "s": "My dad is the ___ person in our family. He's 2 metres.",
+  "o": [
+   "tallest",
+   "taller",
+   "most tall"
+  ],
+  "rule": "Самый — the + -est.",
+  "tr": "Мой папа — самый высокий в семье. Два метра."
+ },
+ {
+  "s": "Maths is ___ than a hippo for me.",
+  "o": [
+   "more difficult",
+   "difficulter",
+   "most difficult"
+  ],
+  "rule": "Длинное слово: more difficult than.",
+  "tr": "Для меня математика сложнее бегемота."
+ },
+ {
+  "s": "This is the ___ expensive sandwich in London.",
+  "o": [
+   "most",
+   "more",
+   "much"
+  ],
+  "rule": "Самый (длинные слова) — the most.",
+  "tr": "Это самый дорогой бутерброд в Лондоне."
+ },
+ {
+  "s": "My cat is as lazy ___ my dad.",
+  "o": [
+   "as",
+   "than",
+   "like"
+  ],
+  "rule": "Такой же, как — as … as.",
+  "tr": "Мой кот такой же ленивый, как мой папа."
+ },
+ {
+  "s": "I saw ___ elephant on the bus.",
+  "o": [
+   "an",
+   "a",
+   "the"
+  ],
+  "rule": "elephant начинается с гласного звука → an.",
+  "tr": "Я видел слона в автобусе."
+ },
+ {
+  "s": "I saw an elephant on the bus. ___ elephant was reading a book.",
+  "o": [
+   "The",
+   "A",
+   "An"
+  ],
+  "rule": "Второй раз о том же — the.",
+  "tr": "Я видел слона в автобусе. Слон читал книгу."
+ },
+ {
+  "s": "She plays ___ violin for her goldfish.",
+  "o": [
+   "the",
+   "a",
+   "—"
+  ],
+  "rule": "Музыкальные инструменты — с the.",
+  "tr": "Она играет на скрипке для своей золотой рыбки."
+ },
+ {
+  "s": "We play ___ football with our grandma on Sundays.",
+  "o": [
+   "—",
+   "the",
+   "a"
+  ],
+  "rule": "Игры и спорт — без артикля.",
+  "tr": "По воскресеньям мы играем в футбол с бабушкой."
+ },
+ {
+  "s": "I have ___ hour to find my homework.",
+  "o": [
+   "an",
+   "a",
+   "—"
+  ],
+  "rule": "hour читается с гласного звука [ауэ] → an.",
+  "tr": "У меня есть час, чтобы найти домашку."
+ },
+ {
+  "s": "She is ___ university student. And a superhero.",
+  "o": [
+   "a",
+   "an",
+   "the"
+  ],
+  "rule": "university читается [юни-] — согласный звук → a.",
+  "tr": "Она студентка университета. И супергерой."
+ },
+ {
+  "s": "The cat jumped ___ the window.",
+  "o": [
+   "out of",
+   "out",
+   "from out"
+  ],
+  "rule": "Выпрыгнуть из — out of.",
+  "tr": "Кот выпрыгнул из окна."
+ },
+ {
+  "s": "The duck walked ___ the kitchen and opened the fridge.",
+  "o": [
+   "into",
+   "in to",
+   "at"
+  ],
+  "rule": "Движение внутрь — into.",
+  "tr": "Утка вошла в кухню и открыла холодильник."
+ },
+ {
+  "s": "The bank is ___ the café and the cinema.",
+  "o": [
+   "between",
+   "among",
+   "through"
+  ],
+  "rule": "Между двумя — between.",
+  "tr": "Банк между кафе и кинотеатром."
+ },
+ {
+  "s": "There's a dragon ___ you! Don't turn around.",
+  "o": [
+   "behind",
+   "after",
+   "back"
+  ],
+  "rule": "Позади — behind.",
+  "tr": "За тобой дракон! Не оборачивайся."
+ },
+ {
+  "s": "The shop is ___ the bank. Just cross the road.",
+  "o": [
+   "opposite",
+   "in front",
+   "between"
+  ],
+  "rule": "Напротив — opposite.",
+  "tr": "Магазин напротив банка. Просто перейди дорогу."
+ },
+ {
+  "s": "The chicken ran ___ the road. Nobody knows why.",
+  "o": [
+   "across",
+   "along",
+   "into"
+  ],
+  "rule": "Через (поперёк) — across.",
+  "tr": "Курица перебежала через дорогу. Никто не знает зачем."
+ },
+ {
+  "s": "We walked ___ the river and sang songs to the fish.",
+  "o": [
+   "along",
+   "across",
+   "between"
+  ],
+  "rule": "Вдоль — along.",
+  "tr": "Мы шли вдоль реки и пели песни рыбам."
+ },
+ {
+  "s": "The train goes ___ a long tunnel under the sea.",
+  "o": [
+   "through",
+   "across",
+   "over"
+  ],
+  "rule": "Сквозь, через туннель — through.",
+  "tr": "Поезд едет через длинный туннель под морем."
+ },
+ {
+  "s": "My birthday is ___ the 5th of June.",
+  "o": [
+   "on",
+   "in",
+   "at"
+  ],
+  "rule": "Даты — с on: on the 5th of June.",
+  "tr": "Мой день рождения пятого июня."
+ },
+ {
+  "s": "I was born ___ 2012, the year of the dragon.",
+  "o": [
+   "in",
+   "on",
+   "at"
+  ],
+  "rule": "Годы — с in.",
+  "tr": "Я родился в 2012-м, в год дракона."
+ },
+ {
+  "s": "We don't go to school ___ the weekend. We sleep.",
+  "o": [
+   "at",
+   "in",
+   "by"
+  ],
+  "rule": "В британском английском — at the weekend.",
+  "tr": "На выходных мы не ходим в школу. Мы спим."
+ },
+ {
+  "s": "Owls hunt ___ night.",
+  "o": [
+   "at",
+   "in",
+   "on"
+  ],
+  "rule": "Ночью — at night (без the).",
+  "tr": "Совы охотятся ночью."
+ },
+ {
+  "s": "I can't drink this tea. There's too ___ sugar in it.",
+  "o": [
+   "much",
+   "many",
+   "lot"
+  ],
+  "rule": "Сахар не считают → too much.",
+  "tr": "Не могу пить этот чай. В нём слишком много сахара."
+ },
+ {
+  "s": "There are too ___ people in the lift. And one cow.",
+  "o": [
+   "many",
+   "much",
+   "lot"
+  ],
+  "rule": "Людей считают → too many.",
+  "tr": "В лифте слишком много людей. И одна корова."
+ },
+ {
+  "s": "I'm not old ___ to drive a car. I'm a hamster.",
+  "o": [
+   "enough",
+   "too",
+   "very"
+  ],
+  "rule": "Достаточно — прилагательное + enough.",
+  "tr": "Я недостаточно взрослый, чтобы водить машину. Я хомяк."
+ },
+ {
+  "s": "This bed is ___ small for an elephant.",
+  "o": [
+   "too",
+   "enough",
+   "so much"
+  ],
+  "rule": "Слишком — too + прилагательное.",
+  "tr": "Эта кровать слишком маленькая для слона."
+ },
+ {
+  "s": "Look at ___! I'm a pirate now.",
+  "o": [
+   "me",
+   "I",
+   "my"
+  ],
+  "rule": "После at — me.",
+  "tr": "Посмотри на меня! Теперь я пират."
+ },
+ {
+  "s": "That pizza is ___. Don't touch it.",
+  "o": [
+   "mine",
+   "my",
+   "me"
+  ],
+  "rule": "Без существительного после — mine.",
+  "tr": "Эта пицца моя. Не трогай."
+ },
+ {
+  "s": "Is this ___ dog? He's eating my shoe.",
+  "o": [
+   "your",
+   "you",
+   "yours"
+  ],
+  "rule": "Перед существительным — your.",
+  "tr": "Это твоя собака? Она ест мой ботинок."
+ },
+ {
+  "s": "The cat is cleaning ___.",
+  "o": [
+   "itself",
+   "himself",
+   "its"
+  ],
+  "rule": "Сам себя (о животном, вещи) — itself.",
+  "tr": "Кот умывается."
+ },
+ {
+  "s": "I made this cake ___. Don't ask what's in it.",
+  "o": [
+   "myself",
+   "me",
+   "mine"
+  ],
+  "rule": "Сам — myself.",
+  "tr": "Я сам испёк этот торт. Не спрашивай, что в нём."
+ },
+ {
+  "s": "We can do it ___! We don't need the robot.",
+  "o": [
+   "ourselves",
+   "ourself",
+   "us"
+  ],
+  "rule": "Мы сами — ourselves.",
+  "tr": "Мы справимся сами! Робот нам не нужен."
+ },
+ {
+  "s": "This is my ___ bike. It has three wheels and a bell.",
+  "o": [
+   "brother's",
+   "brothers",
+   "brother"
+  ],
+  "rule": "Чей? — 's: my brother's bike.",
+  "tr": "Это велосипед моего брата. У него три колеса и звонок."
+ },
+ {
+  "s": "The ___ room is full of toys. They have five kids.",
+  "o": [
+   "children's",
+   "childrens'",
+   "childs'"
+  ],
+  "rule": "children + 's: children's room.",
+  "tr": "Детская полна игрушек. У них пятеро детей."
+ },
+ {
+  "s": "Three ___ are walking on the motorway.",
+  "o": [
+   "geese",
+   "gooses",
+   "goose"
+  ],
+  "rule": "Исключение: goose → geese.",
+  "tr": "По шоссе идут три гуся."
+ },
+ {
+  "s": "There are a lot of ___ in the zoo today.",
+  "o": [
+   "people",
+   "peoples",
+   "persons"
+  ],
+  "rule": "Много людей — people.",
+  "tr": "Сегодня в зоопарке много людей."
+ },
+ {
+  "s": "My grandma has twenty ___. She talks to every one.",
+  "o": [
+   "sheep",
+   "sheeps",
+   "sheepes"
+  ],
+  "rule": "sheep во множественном тоже sheep.",
+  "tr": "У моей бабушки двадцать овец. Она разговаривает с каждой."
+ },
+ {
+  "s": "Can you buy two ___ of bread? One is for the ducks.",
+  "o": [
+   "loaves",
+   "loafs",
+   "loaf"
+  ],
+  "rule": "loaf → loaves (f меняется на ves).",
+  "tr": "Купишь две буханки хлеба? Одна — для уток."
+ },
+ {
+  "s": "I need new ___. My old ones are too small.",
+  "o": [
+   "jeans",
+   "jean",
+   "a jeans"
+  ],
+  "rule": "jeans — всегда множественное число.",
+  "tr": "Мне нужны новые джинсы. Старые малы."
+ },
+ {
+  "s": "She sings very ___. Even the cats run away.",
+  "o": [
+   "badly",
+   "bad",
+   "badder"
+  ],
+  "rule": "Как поёт? — наречие: bad → badly.",
+  "tr": "Она поёт очень плохо. Даже коты убегают."
+ },
+ {
+  "s": "He speaks English very ___.",
+  "o": [
+   "well",
+   "good",
+   "goodly"
+  ],
+  "rule": "good → well (наречие).",
+  "tr": "Он очень хорошо говорит по-английски."
+ },
+ {
+  "s": "Please talk ___. The baby dragon is sleeping.",
+  "o": [
+   "quietly",
+   "quiet",
+   "quieter than"
+  ],
+  "rule": "Как говорить? — quietly.",
+  "tr": "Пожалуйста, говорите тихо. Дракончик спит."
+ },
+ {
+  "s": "I ___ eat broccoli. Never ever.",
+  "o": [
+   "never",
+   "ever",
+   "always"
+  ],
+  "rule": "Никогда — never, перед глаголом.",
+  "tr": "Я никогда не ем брокколи. Никогда-никогда."
+ },
+ {
+  "s": "My cat is ___ hungry. Every minute.",
+  "o": [
+   "always",
+   "never",
+   "ever"
+  ],
+  "rule": "Всегда — always. Стоит после be.",
+  "tr": "Мой кот всегда голоден. Каждую минуту."
+ },
+ {
+  "s": "How ___ do you wash your dog? — Once a year.",
+  "o": [
+   "often",
+   "much",
+   "long"
+  ],
+  "rule": "Как часто? — How often.",
+  "tr": "Как часто ты моешь собаку? — Раз в год."
+ },
+ {
+  "s": "How ___ is the snake? — Five metres!",
+  "o": [
+   "long",
+   "much",
+   "often"
+  ],
+  "rule": "Какой длины? — How long.",
+  "tr": "Какой длины змея? — Пять метров!"
+ },
+ {
+  "s": "___ hat is this? It has a bird nest on it.",
+  "o": [
+   "Whose",
+   "Who",
+   "Who's"
+  ],
+  "rule": "Чей? — Whose.",
+  "tr": "Чья это шляпа? На ней птичье гнездо."
+ },
+ {
+  "s": "___ colour is your hair today? Green or blue?",
+  "o": [
+   "What",
+   "How",
+   "Who"
+  ],
+  "rule": "Какого цвета? — What colour.",
+  "tr": "Какого цвета у тебя сегодня волосы? Зелёные или синие?"
+ },
+ {
+  "s": "Have you ___ been to the Moon?",
+  "o": [
+   "ever",
+   "never",
+   "yet"
+  ],
+  "rule": "Когда-нибудь (в вопросе) — ever.",
+  "tr": "Ты когда-нибудь был на Луне?"
+ },
+ {
+  "s": "I haven't finished my homework ___. The dog is still eating it.",
+  "o": [
+   "yet",
+   "already",
+   "just"
+  ],
+  "rule": "Ещё не (в конце отрицания) — yet.",
+  "tr": "Я ещё не закончил домашку. Собака всё ещё её ест."
+ },
+ {
+  "s": "I've ___ seen a pig on a bicycle! Right now!",
+  "o": [
+   "just",
+   "yet",
+   "ever"
+  ],
+  "rule": "Только что — just.",
+  "tr": "Я только что видел свинью на велосипеде! Прямо сейчас!"
+ },
+ {
+  "s": "We've ___ eaten all the cake. Sorry.",
+  "o": [
+   "already",
+   "yet",
+   "ever"
+  ],
+  "rule": "Уже — already.",
+  "tr": "Мы уже съели весь торт. Простите."
+ },
+ {
+  "s": "He has ___ in London for ten years.",
+  "o": [
+   "lived",
+   "live",
+   "living"
+  ],
+  "rule": "has + третья форма: lived.",
+  "tr": "Он живёт в Лондоне десять лет."
+ },
+ {
+  "s": "I've known my best friend ___ 2019.",
+  "o": [
+   "since",
+   "for",
+   "from"
+  ],
+  "rule": "С какого-то момента — since.",
+  "tr": "Я знаю своего лучшего друга с 2019 года."
+ },
+ {
+  "s": "The zombie has been here ___ three hours.",
+  "o": [
+   "for",
+   "since",
+   "during"
+  ],
+  "rule": "В течение (сколько времени) — for.",
+  "tr": "Зомби здесь уже три часа."
+ },
+ {
+  "s": "I was watching TV when the cat ___ into the room on a skateboard.",
+  "o": [
+   "came",
+   "was coming",
+   "comes"
+  ],
+  "rule": "Длительное (was watching) прервано коротким действием — Past Simple.",
+  "tr": "Я смотрел телевизор, когда кот въехал в комнату на скейте."
+ },
+ {
+  "s": "What ___ you doing at midnight? I heard drums.",
+  "o": [
+   "were",
+   "was",
+   "did"
+  ],
+  "rule": "you → were + -ing (Past Continuous).",
+  "tr": "Что ты делал в полночь? Я слышал барабаны."
+ },
+ {
+  "s": "I ___ to have a pet snake. Now I have a pet rock.",
+  "o": [
+   "used",
+   "use",
+   "was use"
+  ],
+  "rule": "Раньше (а теперь нет) — used to.",
+  "tr": "Раньше у меня была змея. Теперь у меня ручной камень."
+ },
+ {
+  "s": "Did you ___ to like broccoli? — No, never.",
+  "o": [
+   "use",
+   "used",
+   "using"
+  ],
+  "rule": "В вопросе с did — use to (без d).",
+  "tr": "Тебе раньше нравилась брокколи? — Нет, никогда."
+ },
+ {
+  "s": "I'd like ___ a cup of tea with the Queen.",
+  "o": [
+   "to have",
+   "have",
+   "having"
+  ],
+  "rule": "would like + to + глагол.",
+  "tr": "Я бы хотел выпить чашку чая с королевой."
+ },
+ {
+  "s": "I love ___ in the rain. My mum doesn't.",
+  "o": [
+   "dancing",
+   "dance",
+   "to dancing"
+  ],
+  "rule": "love + -ing (или to + глагол).",
+  "tr": "Я обожаю танцевать под дождём. Мама — нет."
+ },
+ {
+  "s": "He hates ___ up early.",
+  "o": [
+   "getting",
+   "get",
+   "gets"
+  ],
+  "rule": "hate + -ing.",
+  "tr": "Он ненавидит рано вставать."
+ },
+ {
+  "s": "Stop ___! The fish is trying to sleep.",
+  "o": [
+   "shouting",
+   "to shouting",
+   "shout"
+  ],
+  "rule": "Stop + -ing — перестать что-то делать.",
+  "tr": "Перестань кричать! Рыбка пытается уснуть."
+ },
+ {
+  "s": "I can't wait ___ my birthday!",
+  "o": [
+   "for",
+   "to",
+   "on"
+  ],
+  "rule": "Не могу дождаться чего-то — can't wait for.",
+  "tr": "Не могу дождаться своего дня рождения!"
+ },
+ {
+  "s": "I'm hungry ___ I ate a pizza ten minutes ago.",
+  "o": [
+   "but",
+   "because",
+   "so"
+  ],
+  "rule": "Противопоставление — but (но).",
+  "tr": "Я голоден, хотя съел пиццу десять минут назад."
+ },
+ {
+  "s": "I'm wearing a coat ___ it's snowing in my room.",
+  "o": [
+   "because",
+   "but",
+   "or"
+  ],
+  "rule": "Потому что — because.",
+  "tr": "Я в пальто, потому что у меня в комнате идёт снег."
+ },
+ {
+  "s": "The dog was tired, ___ he slept on the teacher's desk.",
+  "o": [
+   "so",
+   "because",
+   "but"
+  ],
+  "rule": "Поэтому — so.",
+  "tr": "Собака устала, поэтому уснула на учительском столе."
+ },
+ {
+  "s": "Do you want tea ___ coffee? Or a banana?",
+  "o": [
+   "or",
+   "and",
+   "but"
+  ],
+  "rule": "Выбор — or.",
+  "tr": "Ты хочешь чай или кофе? Или банан?"
+ },
+ {
+  "s": "I like cats. My brother likes cats ___.",
+  "o": [
+   "too",
+   "either",
+   "also too"
+  ],
+  "rule": "Тоже (в утверждении) — too в конце.",
+  "tr": "Я люблю котов. Мой брат тоже."
+ },
+ {
+  "s": "I don't like snakes. My mum doesn't like them ___.",
+  "o": [
+   "either",
+   "too",
+   "also"
+  ],
+  "rule": "Тоже не (в отрицании) — either.",
+  "tr": "Я не люблю змей. Мама тоже."
+ },
+ {
+  "s": "Both my parents ___ teachers. Help.",
+  "o": [
+   "are",
+   "is",
+   "be"
+  ],
+  "rule": "Both — двое → are.",
+  "tr": "Оба моих родителя учителя. Спасите."
+ },
+ {
+  "s": "___ of my friends can fly. That's normal.",
+  "o": [
+   "None",
+   "No",
+   "Nobody"
+  ],
+  "rule": "Никто из — None of.",
+  "tr": "Никто из моих друзей не умеет летать. Это нормально."
+ },
+ {
+  "s": "___ people in this town have a pet llama.",
+  "o": [
+   "Most",
+   "Most of",
+   "The most"
+  ],
+  "rule": "Большинство (вообще) — Most people.",
+  "tr": "Большинство людей в этом городе держат ламу."
+ },
+ {
+  "s": "Everybody ___ my grandma's soup.",
+  "o": [
+   "loves",
+   "love",
+   "are loving"
+  ],
+  "rule": "Everybody — единственное число: loves.",
+  "tr": "Все обожают бабушкин суп."
+ },
+ {
+  "s": "Somebody ___ my sandwich! I'm angry.",
+  "o": [
+   "has eaten",
+   "have eaten",
+   "has eat"
+  ],
+  "rule": "Somebody → has + третья форма.",
+  "tr": "Кто-то съел мой бутерброд! Я зол."
+ },
+ {
+  "s": "Is there ___ in the bathroom? I hear singing.",
+  "o": [
+   "anybody",
+   "somebody",
+   "nobody"
+  ],
+  "rule": "В вопросе — anybody.",
+  "tr": "В ванной кто-нибудь есть? Я слышу пение."
+ },
+ {
+  "s": "I looked ___, but I can't find my glasses. They're on my head.",
+  "o": [
+   "everywhere",
+   "anywhere",
+   "nowhere"
+  ],
+  "rule": "Везде — everywhere.",
+  "tr": "Я искал везде, но не могу найти очки. Они у меня на голове."
+ },
+ {
+  "s": "There's ___ to eat. The fridge is empty. Only a penguin.",
+  "o": [
+   "nothing",
+   "anything",
+   "something"
+  ],
+  "rule": "Ничего — nothing (в утверждении без not).",
+  "tr": "Есть нечего. Холодильник пуст. Только пингвин."
+ },
+ {
+  "s": "Would you like ___ to drink? We have juice and lava.",
+  "o": [
+   "something",
+   "anything",
+   "nothing"
+  ],
+  "rule": "Предложение — something, даже в вопросе.",
+  "tr": "Хочешь чего-нибудь попить? У нас есть сок и лава."
+ },
+ {
+  "s": "These sunglasses are not ___. They're my cat's.",
+  "o": [
+   "mine",
+   "my",
+   "me"
+  ],
+  "rule": "Без существительного — mine.",
+  "tr": "Это не мои очки. Они моего кота."
+ },
+ {
+  "s": "Is this book ___ or hers?",
+  "o": [
+   "his",
+   "him",
+   "he"
+  ],
+  "rule": "Его (без существительного) — his.",
+  "tr": "Это его книга или её?"
+ },
+ {
+  "s": "The dog is wagging ___ tail.",
+  "o": [
+   "its",
+   "it's",
+   "it"
+  ],
+  "rule": "Его (у животного) — its. it's = it is.",
+  "tr": "Собака виляет хвостом."
+ },
+ {
+  "s": "___ raining frogs again!",
+  "o": [
+   "It's",
+   "Its",
+   "It"
+  ],
+  "rule": "it's = it is.",
+  "tr": "Снова идёт дождь из лягушек!"
+ },
+ {
+  "s": "I have a new phone. ___ is pink and it can sing.",
+  "o": [
+   "It",
+   "He",
+   "She"
+  ],
+  "rule": "О вещи — it.",
+  "tr": "У меня новый телефон. Он розовый и умеет петь."
+ },
+ {
+  "s": "My hamster and I ___ best friends.",
+  "o": [
+   "are",
+   "am",
+   "is"
+  ],
+  "rule": "Кто-то и я = мы → are.",
+  "tr": "Мы с хомяком лучшие друзья."
+ },
+ {
+  "s": "My aunt ___ in a lighthouse.",
+  "o": [
+   "lives",
+   "live",
+   "living"
+  ],
+  "rule": "She → lives (с -s).",
+  "tr": "Моя тётя живёт в маяке."
+ },
+ {
+  "s": "Nobody ___ my name. I'm a ghost.",
+  "o": [
+   "knows",
+   "know",
+   "knowing"
+  ],
+  "rule": "Nobody — единственное число: knows.",
+  "tr": "Никто не знает моего имени. Я привидение."
+ },
+ {
+  "s": "Each student ___ a pet dinosaur.",
+  "o": [
+   "has",
+   "have",
+   "are"
+  ],
+  "rule": "Each — каждый по отдельности → has.",
+  "tr": "У каждого ученика есть домашний динозавр."
+ },
+ {
+  "s": "Every morning my cat ___ me with her paw.",
+  "o": [
+   "wakes",
+   "wake",
+   "is wake"
+  ],
+  "rule": "Каждое утро, she → wakes.",
+  "tr": "Каждое утро кошка будит меня лапой."
+ },
+ {
+  "s": "It's my turn! Give the ball to ___!",
+  "o": [
+   "me",
+   "I",
+   "mine"
+  ],
+  "rule": "После to — me.",
+  "tr": "Моя очередь! Дай мяч мне!"
+ },
+ {
+  "s": "The alien gave ___ a strange green box.",
+  "o": [
+   "us",
+   "we",
+   "our"
+  ],
+  "rule": "Нам (после глагола) — us.",
+  "tr": "Пришелец дал нам странную зелёную коробку."
+ },
+ {
+  "s": "I'm meeting my friends ___ the cinema at six.",
+  "o": [
+   "at",
+   "on",
+   "in to"
+  ],
+  "rule": "Встреча у какого-то места — at.",
+  "tr": "Я встречаюсь с друзьями у кинотеатра в шесть."
+ },
+ {
+  "s": "I'm ___ the bus. I'll be late.",
+  "o": [
+   "on",
+   "at",
+   "by"
+  ],
+  "rule": "В автобусе (едешь) — on the bus.",
+  "tr": "Я в автобусе. Опоздаю."
+ },
+ {
+  "s": "My keys are ___ my pocket. No, they're in the fridge.",
+  "o": [
+   "in",
+   "on",
+   "at"
+  ],
+  "rule": "Внутри — in.",
+  "tr": "Ключи у меня в кармане. Нет, они в холодильнике."
+ },
+ {
+  "s": "There's a spider ___ the ceiling.",
+  "o": [
+   "on",
+   "in",
+   "at"
+  ],
+  "rule": "На поверхности (даже на потолке) — on.",
+  "tr": "На потолке паук."
+ },
+ {
+  "s": "I'll call you ___ five minutes.",
+  "o": [
+   "in",
+   "after",
+   "on"
+  ],
+  "rule": "Через (столько-то времени) — in.",
+  "tr": "Я позвоню тебе через пять минут."
+ },
+ {
+  "s": "We go skiing ___ winter and our dog goes with us.",
+  "o": [
+   "in",
+   "on",
+   "at"
+  ],
+  "rule": "Времена года — с in.",
+  "tr": "Зимой мы катаемся на лыжах, и собака с нами."
+ },
+ {
+  "s": "The film starts ___ midnight. Bring popcorn.",
+  "o": [
+   "at",
+   "in",
+   "on"
+  ],
+  "rule": "at midnight, at noon — точное время.",
+  "tr": "Фильм начинается в полночь. Захвати попкорн."
+ },
+ {
+  "s": "Look ___ that cloud! It looks like a sheep.",
+  "o": [
+   "at",
+   "on",
+   "to"
+  ],
+  "rule": "Смотреть на — look at.",
+  "tr": "Посмотри на то облако! Похоже на овцу."
+ },
+ {
+  "s": "Can you look ___ my hamster this weekend?",
+  "o": [
+   "after",
+   "at",
+   "for"
+  ],
+  "rule": "Присмотреть за — look after.",
+  "tr": "Можешь присмотреть за моим хомяком на выходных?"
+ },
+ {
+  "s": "I'm looking ___ my other sock. Have you seen it?",
+  "o": [
+   "for",
+   "at",
+   "after"
+  ],
+  "rule": "Искать — look for.",
+  "tr": "Я ищу свой второй носок. Ты его не видел?"
+ },
+ {
+  "s": "Turn ___ the TV, please. The cat wants to watch cartoons.",
+  "o": [
+   "on",
+   "in",
+   "up to"
+  ],
+  "rule": "Включить — turn on.",
+  "tr": "Включи телевизор, пожалуйста. Кот хочет смотреть мультики."
+ },
+ {
+  "s": "Put ___ your coat. It's minus forty.",
+  "o": [
+   "on",
+   "in",
+   "off"
+  ],
+  "rule": "Надеть — put on.",
+  "tr": "Надень пальто. Там минус сорок."
+ },
+ {
+  "s": "Please sit ___. The show is starting.",
+  "o": [
+   "down",
+   "up",
+   "on"
+  ],
+  "rule": "Сесть — sit down.",
+  "tr": "Пожалуйста, садитесь. Шоу начинается."
+ },
+ {
+  "s": "Wake ___! There's a horse in the kitchen!",
+  "o": [
+   "up",
+   "on",
+   "down"
+  ],
+  "rule": "Проснись — wake up.",
+  "tr": "Проснись! На кухне лошадь!"
+ },
+ {
+  "s": "Can I try ___ these shoes? They're size 52.",
+  "o": [
+   "on",
+   "in",
+   "at"
+  ],
+  "rule": "Примерить — try on.",
+  "tr": "Можно примерить эти ботинки? Они 52-го размера."
+ },
+ {
+  "s": "My grandma gave ___ sugar forty years ago. Now she eats only carrots.",
+  "o": [
+   "up",
+   "on",
+   "off"
+  ],
+  "rule": "Бросить привычку — give up.",
+  "tr": "Бабушка отказалась от сахара сорок лет назад. Теперь она ест только морковку."
+ },
+ {
+  "s": "Don't throw that pizza ___! I'll eat it.",
+  "o": [
+   "away",
+   "out of",
+   "off to"
+  ],
+  "rule": "Выбросить — throw away.",
+  "tr": "Не выбрасывай пиццу! Я её съем."
+ },
+ {
+  "s": "The plane took ___ and the cow waved goodbye.",
+  "o": [
+   "off",
+   "up",
+   "on"
+  ],
+  "rule": "Взлететь — take off.",
+  "tr": "Самолёт взлетел, а корова помахала на прощание."
+ },
+ {
+  "s": "I get ___ well with my sister. She's a robot.",
+  "o": [
+   "on",
+   "up",
+   "in"
+  ],
+  "rule": "Ладить с кем-то — get on well with.",
+  "tr": "Я хорошо лажу с сестрой. Она робот."
+ },
+ {
+  "s": "We ran ___ of milk, so we put orange juice in our cereal.",
+  "o": [
+   "out",
+   "off",
+   "away"
+  ],
+  "rule": "Закончиться — run out of.",
+  "tr": "У нас кончилось молоко, поэтому мы залили хлопья апельсиновым соком."
+ },
+ {
+  "s": "Hurry ___! The dinosaur is waiting.",
+  "o": [
+   "up",
+   "on",
+   "in"
+  ],
+  "rule": "Поторопись — hurry up.",
+  "tr": "Поторопись! Динозавр ждёт."
+ },
+ {
+  "s": "Can you pick ___ my sock from the floor? I'm too lazy.",
+  "o": [
+   "up",
+   "on",
+   "off"
+  ],
+  "rule": "Поднять с пола — pick up.",
+  "tr": "Можешь поднять мой носок с пола? Мне лень."
+ },
+ {
+  "s": "Please fill ___ this form. Write your name and your cat's name.",
+  "o": [
+   "in",
+   "on",
+   "at"
+  ],
+  "rule": "Заполнить анкету — fill in.",
+  "tr": "Пожалуйста, заполните эту анкету. Напишите своё имя и имя кота."
+ },
+ {
+  "s": "My dad ___ got a pet tarantula called Fluffy.",
+  "o": [
+   "has",
+   "have",
+   "is"
+  ],
+  "rule": "He → has got.",
+  "tr": "У моего папы есть домашний паук-птицеед по кличке Пушистик."
+ },
+ {
+  "s": "___ you got a pen? Mine is in the soup.",
+  "o": [
+   "Have",
+   "Has",
+   "Do"
+  ],
+  "rule": "Вопрос с have got: Have you got…?",
+  "tr": "У тебя есть ручка? Моя в супе."
+ },
+ {
+  "s": "We ___ got any bread, but we have a lot of cake.",
+  "o": [
+   "haven't",
+   "hasn't",
+   "don't"
+  ],
+  "rule": "Отрицание: we haven't got.",
+  "tr": "У нас нет хлеба, зато много торта."
+ },
+ {
+  "s": "How ___ legs does a spider have?",
+  "o": [
+   "many",
+   "much",
+   "long"
+  ],
+  "rule": "Ноги считают → many.",
+  "tr": "Сколько ног у паука?"
+ },
+ {
+  "s": "How ___ is this unicorn? — It's free!",
+  "o": [
+   "much",
+   "many",
+   "often"
+  ],
+  "rule": "Сколько стоит — How much.",
+  "tr": "Сколько стоит этот единорог? — Бесплатно!"
+ },
+ {
+  "s": "How ___ are you? — I'm twelve. And my dog is eighty-four in dog years.",
+  "o": [
+   "old",
+   "many",
+   "much"
+  ],
+  "rule": "Сколько лет — How old.",
+  "tr": "Сколько тебе лет? — Двенадцать. А моей собаке восемьдесят четыре по-собачьи."
+ },
+ {
+  "s": "___ are you laughing? — Because the cat is wearing my hat.",
+  "o": [
+   "Why",
+   "Where",
+   "Which"
+  ],
+  "rule": "Почему — Why.",
+  "tr": "Почему ты смеёшься? — Потому что кот в моей шляпе."
+ },
+ {
+  "s": "___ one do you want, the red dragon or the blue dragon?",
+  "o": [
+   "Which",
+   "What",
+   "Who"
+  ],
+  "rule": "Какой из (выбор из нескольких) — Which.",
+  "tr": "Какого хочешь — красного дракона или синего?"
+ },
+ {
+  "s": "I ___ like to be a penguin. They look so cool.",
+  "o": [
+   "would",
+   "will",
+   "am"
+  ],
+  "rule": "Мне бы хотелось — would like.",
+  "tr": "Я бы хотел быть пингвином. Они такие крутые."
+ },
+ {
+  "s": "Would you like ___ cookie? — Yes, ten, please.",
+  "o": [
+   "a",
+   "an",
+   "any"
+  ],
+  "rule": "Одно печенье (исчисляемое) — a cookie.",
+  "tr": "Хочешь печенье? — Да, десять, пожалуйста."
+ },
+ {
+  "s": "Can I have ___ water, please? The fish is thirsty.",
+  "o": [
+   "some",
+   "a",
+   "many"
+  ],
+  "rule": "Неисчисляемое в просьбе — some.",
+  "tr": "Можно немного воды? Рыбка хочет пить."
+ },
+ {
+  "s": "Let's ___ the cat a birthday party!",
+  "o": [
+   "give",
+   "to give",
+   "giving"
+  ],
+  "rule": "Let's + глагол без to.",
+  "tr": "Давай устроим коту день рождения!"
+ },
+ {
+  "s": "Don't ___ late! The dragon hates waiting.",
+  "o": [
+   "be",
+   "are",
+   "being"
+  ],
+  "rule": "Не опаздывай — Don't be late.",
+  "tr": "Не опаздывай! Дракон терпеть не может ждать."
+ },
+ {
+  "s": "___ careful! The floor is lava!",
+  "o": [
+   "Be",
+   "Are",
+   "Is"
+  ],
+  "rule": "Повелительное от to be — Be.",
+  "tr": "Осторожно! Пол — это лава!"
+ },
+ {
+  "s": "Please turn ___ page 17. There's a picture of a dancing cow.",
+  "o": [
+   "to",
+   "at",
+   "in"
+  ],
+  "rule": "Открыть на странице — turn to page 17.",
+  "tr": "Откройте страницу 17. Там картинка с танцующей коровой."
+ },
+ {
+  "s": "The cake was ___ delicious that the dog ate the plate.",
+  "o": [
+   "so",
+   "such",
+   "too"
+  ],
+  "rule": "Так (+ прилагательное) — so.",
+  "tr": "Торт был таким вкусным, что собака съела тарелку."
+ },
+ {
+  "s": "It was ___ a funny film that I laughed for three hours.",
+  "o": [
+   "such",
+   "so",
+   "too"
+  ],
+  "rule": "Такой (+ a + прилагательное + существительное) — such.",
+  "tr": "Это был такой смешной фильм, что я смеялся три часа."
+ },
+ {
+  "s": "I'm really bored ___ this lesson about rocks.",
+  "o": [
+   "with",
+   "of on",
+   "at"
+  ],
+  "rule": "Скучно от чего-то — bored with (или of).",
+  "tr": "Мне правда скучно на этом уроке про камни."
+ },
+ {
+  "s": "My dad is good ___ cooking, but he never washes up.",
+  "o": [
+   "at",
+   "in",
+   "on"
+  ],
+  "rule": "Хорошо уметь что-то — good at.",
+  "tr": "Папа хорошо готовит, но никогда не моет посуду."
+ },
+ {
+  "s": "The house is full ___ cats.",
+  "o": [
+   "of",
+   "with",
+   "from"
+  ],
+  "rule": "Полный чего-то — full of.",
+  "tr": "Дом полон котов."
+ },
+ {
+  "s": "My little sister is scared ___ the dark.",
+  "o": [
+   "of",
+   "from",
+   "about"
+  ],
+  "rule": "Бояться — scared of.",
+  "tr": "Моя младшая сестра боится темноты."
+ },
+ {
+  "s": "I'm sorry ___ breaking your vase. The cat did it. No, I did it.",
+  "o": [
+   "for",
+   "about of",
+   "to"
+  ],
+  "rule": "Извиниться за что-то — sorry for.",
+  "tr": "Прости, что разбил твою вазу. Это кот. Нет, это я."
+ },
+ {
+  "s": "This present is ___ you. It's a box of sand.",
+  "o": [
+   "for",
+   "to",
+   "at"
+  ],
+  "rule": "Для кого-то — for.",
+  "tr": "Этот подарок для тебя. Это коробка песка."
+ },
+ {
+  "s": "She is married ___ a pirate.",
+  "o": [
+   "to",
+   "with",
+   "on"
+  ],
+  "rule": "Замужем за — married to.",
+  "tr": "Она замужем за пиратом."
+ },
+ {
+  "s": "I agree ___ you. Pizza is a vegetable.",
+  "o": [
+   "with",
+   "to",
+   "on"
+  ],
+  "rule": "Соглашаться с кем-то — agree with.",
+  "tr": "Я с тобой согласен. Пицца — это овощ."
+ },
+ {
+  "s": "What's the weather ___ today? — It's raining fish.",
+  "o": [
+   "like",
+   "as",
+   "how"
+  ],
+  "rule": "Какая погода? — What's the weather like?",
+  "tr": "Какая сегодня погода? — Идёт рыбный дождь."
+ },
+ {
+  "s": "What does your teacher look ___? — Like a very tall owl.",
+  "o": [
+   "like",
+   "as",
+   "similar"
+  ],
+  "rule": "Как выглядит? — What does … look like?",
+  "tr": "Как выглядит твой учитель? — Как очень высокая сова."
+ },
+ {
+  "s": "My brother looks ___ a famous footballer. He isn't.",
+  "o": [
+   "like",
+   "as",
+   "alike"
+  ],
+  "rule": "Похож на — look like.",
+  "tr": "Мой брат похож на знаменитого футболиста. Но он не футболист."
+ },
+ {
+  "s": "This soup tastes ___. What's in it? — Socks.",
+  "o": [
+   "strange",
+   "strangely",
+   "stranger than"
+  ],
+  "rule": "После taste, look, smell — прилагательное.",
+  "tr": "У супа странный вкус. Что в нём? — Носки."
+ },
+ {
+  "s": "You look ___ today! Is that a new hat or a cat?",
+  "o": [
+   "great",
+   "greatly",
+   "great as"
+  ],
+  "rule": "look + прилагательное.",
+  "tr": "Ты отлично выглядишь сегодня! Это новая шляпа или кот?"
+ },
+ {
+  "s": "This bag is ___ heavy. What's inside? A cow?",
+  "o": [
+   "really",
+   "real",
+   "reals"
+  ],
+  "rule": "Очень — really (наречие перед прилагательным).",
+  "tr": "Эта сумка очень тяжёлая. Что внутри? Корова?"
+ },
+ {
+  "s": "The robot ___ make breakfast yesterday. It was broken.",
+  "o": [
+   "couldn't",
+   "can't",
+   "didn't could"
+  ],
+  "rule": "Не смог в прошлом — couldn't.",
+  "tr": "Вчера робот не смог приготовить завтрак. Он был сломан."
+ },
+ {
+  "s": "When I ___ a child, I wanted to be a bus.",
+  "o": [
+   "was",
+   "were",
+   "am"
+  ],
+  "rule": "I → was.",
+  "tr": "Когда я был маленьким, я хотел стать автобусом."
+ },
+ {
+  "s": "___ you at home last night? Your cat called me.",
+  "o": [
+   "Were",
+   "Was",
+   "Did"
+  ],
+  "rule": "you → Were you…?",
+  "tr": "Ты был дома вчера вечером? Мне звонил твой кот."
+ },
+ {
+  "s": "The children ___ very noisy at the zoo.",
+  "o": [
+   "were",
+   "was",
+   "is"
+  ],
+  "rule": "children — много → were.",
+  "tr": "Дети очень шумели в зоопарке."
+ },
+ {
+  "s": "I didn't ___ the joke. Can you tell it again?",
+  "o": [
+   "understand",
+   "understood",
+   "understanding"
+  ],
+  "rule": "После didn't — начальная форма.",
+  "tr": "Я не понял шутку. Можешь рассказать ещё раз?"
+ },
+ {
+  "s": "What did you ___ for your birthday? — A goat.",
+  "o": [
+   "get",
+   "got",
+   "getting"
+  ],
+  "rule": "После did — начальная форма: get.",
+  "tr": "Что тебе подарили на день рождения? — Козу."
+ },
+ {
+  "s": "She ___ a letter to her favourite potato.",
+  "o": [
+   "wrote",
+   "writed",
+   "write"
+  ],
+  "rule": "write → wrote.",
+  "tr": "Она написала письмо своей любимой картошке."
+ },
+ {
+  "s": "I ___ my grandma's glasses. They were on the cat.",
+  "o": [
+   "broke",
+   "breaked",
+   "break"
+  ],
+  "rule": "break → broke.",
+  "tr": "Я сломал бабушкины очки. Они были на коте."
+ },
+ {
+  "s": "We ___ the whole cake in five minutes.",
+  "o": [
+   "ate",
+   "eated",
+   "eat"
+  ],
+  "rule": "eat → ate.",
+  "tr": "Мы съели весь торт за пять минут."
+ },
+ {
+  "s": "The cow ___ over the moon. Really.",
+  "o": [
+   "jumped",
+   "jump",
+   "jumpt"
+  ],
+  "rule": "Правильный глагол: jump → jumped.",
+  "tr": "Корова перепрыгнула через Луну. Правда."
+ },
+ {
+  "s": "My teacher ___ me a funny story about her parrot.",
+  "o": [
+   "told",
+   "telled",
+   "said"
+  ],
+  "rule": "tell → told. И tell + кому.",
+  "tr": "Учительница рассказала мне смешную историю про своего попугая."
+ },
+ {
+  "s": "I ___ a strange noise in the attic last night.",
+  "o": [
+   "heard",
+   "heared",
+   "hear"
+  ],
+  "rule": "hear → heard.",
+  "tr": "Прошлой ночью я слышал странный шум на чердаке."
+ },
+ {
+  "s": "He ___ his bike into the swimming pool.",
+  "o": [
+   "rode",
+   "rided",
+   "ride"
+  ],
+  "rule": "ride → rode.",
+  "tr": "Он въехал на велосипеде в бассейн."
+ },
+ {
+  "s": "I ___ a selfie with a camel.",
+  "o": [
+   "took",
+   "taked",
+   "take"
+  ],
+  "rule": "take → took.",
+  "tr": "Я сделал селфи с верблюдом."
+ },
+ {
+  "s": "The baby ___ for two hours and then laughed for three.",
+  "o": [
+   "cried",
+   "cryed",
+   "cry"
+  ],
+  "rule": "cry → cried: y меняется на i.",
+  "tr": "Малыш плакал два часа, а потом смеялся три."
+ },
+ {
+  "s": "We ___ to Paris by bicycle. It took two weeks.",
+  "o": [
+   "went",
+   "goed",
+   "gone"
+  ],
+  "rule": "go → went.",
+  "tr": "Мы поехали в Париж на велосипеде. Ушло две недели."
+ },
+ {
+  "s": "Somebody ___ the window and a pigeon flew in.",
+  "o": [
+   "opened",
+   "open",
+   "opend"
+  ],
+  "rule": "open → opened.",
+  "tr": "Кто-то открыл окно, и влетел голубь."
+ },
+ {
+  "s": "The pizza ___ cold, so I gave it to the dog.",
+  "o": [
+   "was",
+   "were",
+   "is be"
+  ],
+  "rule": "pizza — одна → was.",
+  "tr": "Пицца была холодной, поэтому я отдал её собаке."
+ },
+ {
+  "s": "Who ___ the last cookie? Be honest.",
+  "o": [
+   "ate",
+   "did eat",
+   "eat"
+  ],
+  "rule": "Вопрос к подлежащему (Кто?) — без did: Who ate?",
+  "tr": "Кто съел последнее печенье? Только честно."
+ }
+]

@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Угарный English</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@400;500;600;700;800&family=Pangolin&display=swap">
+<style>
+:root{
+  --paper:#F3F0F5;
+  --card:#FFFFFF;
+  --ink:#1B1530;
+  --muted:#5B5370;
+  --pink:#FF3DA5;
+  --blue:#2F49FF;
+  --yellow:#FFE14D;
+  --pink-t:#FFD9EE;
+  --blue-t:#DFE3FF;
+  --yellow-t:#FFF3B3;
+  --good:#0F9D58;
+  --good-t:#C8F1D9;
+  --bad:#E5412B;
+  --bad-t:#FFD5CE;
+  --f-display:"Dela Gothic One","Arial Black",Impact,sans-serif;
+  --f-body:"Onest","Segoe UI",Roboto,system-ui,sans-serif;
+  --f-hand:"Pangolin","Comic Sans MS","Marker Felt",cursive;
+  --line:2.5px solid var(--ink);
+  --shadow:5px 5px 0 var(--ink);
+  color-scheme:light;
+  /* Layout: one centred column (max 780px), screens swap inside #app.
+     Signature: two-ink risograph misregistration (pink + blue) on display type, over halftone paper. */
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background-color:var(--paper);background-image:radial-gradient(rgba(47,73,255,.10) 1px,transparent 1.4px);background-size:9px 9px;color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:disabled{cursor:default}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+p{margin:0}
+.shell{max-width:780px;margin:0 auto;padding:12px 18px 56px}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px 12px;padding:6px 0 16px;flex-wrap:wrap}
+.logo{font-family:var(--f-display);font-size:16px;background:none;border:0;padding:4px 0;letter-spacing:.01em}
+.logo b{font-weight:400;color:var(--blue);text-shadow:2px 1.5px 0 var(--pink)}
+.toggles{display:flex;gap:8px;flex-wrap:wrap}
+.tog{display:inline-flex;align-items:center;gap:7px;border:2px solid var(--ink);background:var(--card);border-radius:999px;padding:5px 12px 5px 10px;font-size:14px;font-weight:600}
+.tog::before{content:"";width:10px;height:10px;border-radius:50%;border:2px solid var(--ink);background:transparent}
+.tog[aria-pressed="true"]::before{background:var(--good);border-color:var(--good)}
+
+/* hero */
+.hero{padding:6px 0 26px}
+.title{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(44px,12.5vw,98px);line-height:.95;letter-spacing:-.005em}
+.title .l1{display:block;color:var(--ink);text-shadow:.05em .04em 0 var(--pink),-.03em -.022em 0 var(--blue)}
+.title .l2{display:inline-block;margin-top:.14em;padding:.08em .2em .04em;background:var(--yellow);color:var(--blue);text-shadow:.05em .04em 0 var(--pink);border:3px solid var(--ink);box-shadow:.07em .07em 0 var(--ink);transform:rotate(-2.5deg);transform-origin:left center}
+.ch{display:inline-block;animation:drop .7s cubic-bezier(.2,1.5,.35,1) both}
+@keyframes drop{0%{transform:translateY(-.45em) rotate(-14deg)}100%{transform:none}}
+.lead{margin-top:22px;max-width:36em;font-size:18px}
+.lvl{display:inline-block;font-weight:800;background:var(--ink);color:var(--paper);border-radius:6px;padding:0 7px;font-size:.9em}
+
+/* mode tiles */
+.sec-label{font-family:var(--f-hand);font-size:22px;color:var(--pink);margin:0 0 10px;transform:rotate(-1.5deg);display:inline-block}
+.modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mode{--rot:0deg;position:relative;text-align:left;border:var(--line);border-radius:16px;background:var(--card);padding:16px 18px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;min-height:182px;transform:rotate(var(--rot));transition:transform .22s cubic-bezier(.2,.8,.3,1),box-shadow .22s ease}
+.mode:hover{transform:translate(-2px,-2px) rotate(var(--rot));box-shadow:8px 8px 0 var(--ink)}
+.mode:active{transform:translate(3px,3px) rotate(var(--rot));box-shadow:1px 1px 0 var(--ink)}
+.mode .num{font-family:var(--f-display);font-size:13px;letter-spacing:.06em;opacity:.7}
+.mode .mt{font-family:var(--f-display);font-size:23px;line-height:1.08;text-wrap:balance}
+.mode .desc{font-size:15px;line-height:1.4;color:var(--muted)}
+.mode .meta{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;font-weight:700;padding-top:6px}
+.chip{border:2px solid var(--ink);border-radius:999px;padding:1px 10px;background:var(--card)}
+.best{font-variant-numeric:tabular-nums;color:var(--muted)}
+.m-hotel{background:var(--pink-t);--rot:-1deg}
+.m-run{background:var(--blue-t);--rot:.8deg}
+.m-gram{background:var(--yellow-t);--rot:.6deg}
+.m-emoji{background:var(--card);--rot:-.7deg}
+.m-party{grid-column:1/-1;background:var(--ink);color:var(--paper);min-height:0;--rot:-.4deg;box-shadow:5px 5px 0 var(--pink)}
+.m-party:hover{box-shadow:8px 8px 0 var(--pink)}
+.m-party:active{box-shadow:1px 1px 0 var(--pink)}
+.m-party .desc{color:#D8D2E8}
+.m-party .mt{font-size:28px;color:var(--yellow);text-shadow:.05em .04em 0 var(--pink)}
+.m-party .chip{background:transparent;border-color:var(--paper)}
+.m-party .best{color:#D8D2E8}
+
+.pod{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;border:2.5px dashed var(--ink);border-radius:14px;padding:14px 16px;background:rgba(255,255,255,.65)}
+.pod-label{font-family:var(--f-hand);font-size:21px;color:var(--pink);transform:rotate(-3deg)}
+.pod-body{flex:1 1 260px}
+.pod-en{color:var(--blue)}
+.pod-not{color:var(--muted);font-size:15px}
+.foot{margin-top:16px;font-size:13px;color:var(--muted);max-width:44em}
+
+/* hud */
+.hud{display:flex;align-items:center;justify-content:space-between;gap:10px 14px;flex-wrap:wrap;margin-bottom:16px}
+.hud-l,.hud-r{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.back{border:2px solid var(--ink);background:var(--card);border-radius:10px;padding:5px 12px;font-weight:700;font-size:14px}
+.back:hover{background:var(--yellow-t)}
+.mname{font-family:var(--f-display);font-size:16px}
+.dots{display:flex;gap:4px}
+.dot{width:11px;height:11px;border-radius:50%;border:2px solid var(--ink);background:var(--card)}
+.dot.ok{background:var(--good);border-color:var(--good)}
+.dot.no{background:var(--bad);border-color:var(--bad)}
+.dot.cur{background:var(--yellow)}
+.lives{display:flex;gap:2px}
+.score{display:flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:22px;font-variant-numeric:tabular-nums;min-width:3ch;justify-content:flex-end}
+.combo{font-family:var(--f-body);font-weight:800;font-size:12px;background:var(--pink);border:2px solid var(--ink);border-radius:999px;padding:1px 8px;transform:rotate(-4deg)}
+
+/* stage */
+.stage{background:var(--card);border:var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.guest{display:flex;align-items:center;gap:14px}
+.avatar{width:78px;height:78px;flex:none;border-radius:50%;background:var(--yellow);border:var(--line);display:grid;place-items:center;font-size:44px;line-height:1;box-shadow:3px 3px 0 var(--ink)}
+.gname{font-family:var(--f-display);font-size:20px;line-height:1.1}
+.bubble{position:relative;margin-top:18px;background:var(--blue-t);border:var(--line);border-radius:16px;padding:16px 18px;font-size:clamp(20px,4.6vw,26px);font-weight:700;line-height:1.28}
+.bubble::before{content:"";position:absolute;left:30px;top:-13px;width:22px;height:22px;background:var(--blue-t);border-left:var(--line);border-top:var(--line);transform:rotate(45deg);border-top-left-radius:4px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tools.center{justify-content:center}
+.mini{border:2px solid var(--ink);background:var(--card);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:700}
+.mini:hover:not(:disabled){background:var(--yellow-t)}
+.mini:disabled{opacity:.4}
+.mini small{font-weight:800;color:var(--bad);font-size:12px}
+.tr{margin-top:12px;font-family:var(--f-hand);font-size:20px;line-height:1.3;color:var(--blue)}
+.sentence{margin-top:10px;font-size:clamp(22px,5.2vw,31px);font-weight:700;line-height:1.32}
+.gap{display:inline-block;min-width:2.6em;padding:0 .2em;border-bottom:4px solid var(--pink);text-align:center;color:var(--pink)}
+.gap.filled{color:var(--good);border-color:var(--good)}
+.emo{margin:14px 0 4px;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px 14px;font-size:clamp(54px,14vw,92px);line-height:1.1}
+.plus{font-family:var(--f-display);font-weight:400;font-size:.5em;color:var(--pink)}
+.ru{margin-top:10px;font-family:var(--f-display);font-size:clamp(28px,7vw,44px);line-height:1.1;text-wrap:balance}
+.ctx{margin-top:6px;color:var(--muted);font-size:15px}
+
+/* options */
+.opts{display:grid;gap:10px;margin-top:20px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--card);border:var(--line);border-radius:12px;padding:12px 14px;font-size:18px;font-weight:600;line-height:1.3;box-shadow:3px 3px 0 var(--ink);transition:transform .2s cubic-bezier(.2,.8,.3,1),box-shadow .2s ease,background-color .2s ease,opacity .25s}
+.opt:hover:not(:disabled){background:var(--yellow-t);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.opt:active:not(:disabled){transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.opt .k{flex:none;width:30px;height:30px;border-radius:8px;border:2px solid var(--ink);display:grid;place-items:center;font-size:14px;font-weight:800;background:var(--paper)}
+.opt.right{background:var(--good-t)}
+.opt.right .k{background:var(--good);border-color:var(--good);color:#fff}
+.opt.wrong{background:var(--bad-t)}
+.opt.wrong .t{text-decoration:line-through;text-decoration-thickness:2px}
+.opt.wrong .k{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt.dim{opacity:.45;box-shadow:none}
+.opt.gone{opacity:.25;box-shadow:none}
+.opt.gone .t{text-decoration:line-through}
+
+/* feedback */
+.fb{margin-top:20px;border-top:2.5px dashed var(--ink);padding-top:18px;display:grid;gap:12px}
+.fb .next{justify-self:end;margin-top:4px}
+.joke{font-size:18px;line-height:1.45}
+.pick{border:2px solid;border-radius:14px;padding:12px 14px;display:grid;gap:5px}
+.pick.good{background:var(--good-t);border-color:var(--good)}
+.pick.bad{background:var(--bad-t);border-color:var(--bad)}
+.pick-lbl{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.pick.good .pick-lbl{color:var(--good)}
+.pick.bad .pick-lbl{color:var(--bad)}
+.pick-ico{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:11px}
+.good .pick-ico{background:var(--good)}
+.bad .pick-ico{background:var(--bad)}
+.pick-en{font-size:19px;font-weight:700;line-height:1.3}
+.ru{font-size:16px;line-height:1.4;color:#463f5c}
+.ru::before{content:"RU";display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;border:1.5px solid currentColor;border-radius:5px;padding:0 4px;margin-right:7px;vertical-align:2px;opacity:.8}
+.pick .joke{font-size:15.5px;line-height:1.45;margin-top:3px;padding-top:7px;border-top:1.5px dashed rgba(27,21,48,.2)}
+.w-bad{color:var(--bad);text-decoration:line-through;text-decoration-thickness:2px}
+.w-good{color:var(--good);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:3px}
+.tip{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;line-height:1.45;background:var(--yellow-t);border-radius:12px;padding:10px 14px}
+.tip b{flex:none}
+.bubble-tr,.sent-tr{overflow:hidden;animation:unfold .4s ease both}
+.bubble-tr{margin-top:12px;padding-top:10px;border-top:2px dashed rgba(27,21,48,.25);font-family:var(--f-body);font-weight:500;font-size:clamp(16px,3.6vw,18px);color:#463f5c}
+.bubble-tr::before{content:"RU";display:inline-block;font-size:10px;font-weight:800;border:1.5px solid currentColor;border-radius:5px;padding:0 4px;margin-right:8px;vertical-align:2px;opacity:.8}
+.sent-tr{margin-top:8px;font-family:var(--f-hand);font-size:20px;color:#1d2fb8}
+@keyframes unfold{from{max-height:0;opacity:0;transform:translateY(-8px)}to{max-height:240px;opacity:1;transform:none}}
+.opt.just{animation:press .55s cubic-bezier(.2,.8,.3,1)}
+@keyframes press{0%{transform:scale(.94)}55%{transform:scale(1.03)}100%{transform:none}}
+.btn:active,.opt:active,.mode:active,.mini:active,.tog:active,.back:active,.seg button:active{transition-duration:.05s!important}
+#app.swap > *{animation:enter .55s cubic-bezier(.2,.8,.3,1) both}
+#app.swap > *:nth-child(2){animation-delay:.07s}
+#app.swap > *:nth-child(3){animation-delay:.14s}
+#app.swap > *:nth-child(n+4){animation-delay:.2s}
+#app.swap .opt{animation:enter .5s cubic-bezier(.2,.8,.3,1) both}
+#app.swap .mode{animation:enter-tilt .5s cubic-bezier(.2,.8,.3,1) both}
+@keyframes enter-tilt{from{opacity:0;transform:translateY(18px) rotate(var(--rot))}to{opacity:1;transform:rotate(var(--rot))}}
+#app.swap .opt:nth-child(1),#app.swap .mode:nth-child(1){animation-delay:.15s}
+#app.swap .opt:nth-child(2),#app.swap .mode:nth-child(2){animation-delay:.22s}
+#app.swap .opt:nth-child(3),#app.swap .mode:nth-child(3){animation-delay:.29s}
+#app.swap .opt:nth-child(4),#app.swap .mode:nth-child(4){animation-delay:.36s}
+#app.swap .mode:nth-child(5){animation-delay:.43s}
+@keyframes enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.mini,.tog,.back,.seg button,.logo{transition:transform .18s cubic-bezier(.2,.8,.3,1),background-color .2s ease}
+.mini:active:not(:disabled),.tog:active,.back:active,.seg button:active,.logo:active{transform:scale(.93)}
+.vsel::before{display:none}
+.vsel{position:relative}
+.vsel select{position:absolute;inset:0;width:100%;opacity:0;cursor:pointer;font-size:16px}
+.verdict{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-family:var(--f-hand);font-size:32px;line-height:1.05}
+.verdict.ok{color:var(--good)}
+.verdict.no{color:var(--bad)}
+.pts{font-family:var(--f-display);font-size:15px;color:var(--ink);background:var(--yellow);padding:3px 9px;border:2px solid var(--ink);border-radius:8px;transform:rotate(-3deg)}
+.pts.bad{background:var(--bad-t)}
+.comment{font-size:18px;line-height:1.45}
+.right-ans{font-size:18px}
+.note{font-size:15px;color:var(--muted);line-height:1.45}
+.lbl{font-weight:800;color:var(--ink)}
+.warn{color:var(--bad);font-weight:700}
+
+/* buttons */
+.btn{font-family:var(--f-display);font-size:18px;border:var(--line);border-radius:12px;padding:12px 22px;background:var(--pink);color:var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .2s cubic-bezier(.2,.8,.3,1),box-shadow .2s ease}
+.btn:hover:not(:disabled){transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn:active:not(:disabled){transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn:disabled{opacity:.45}
+.btn.ghost{background:var(--card)}
+.btn.good{background:var(--good);color:#fff}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+/* results */
+.result .stage{text-align:center}
+.rank-emoji{font-size:68px;line-height:1;margin-bottom:6px}
+.rank{font-family:var(--f-display);font-weight:400;font-size:clamp(28px,7vw,44px);line-height:1.05;margin:6px 0 10px;text-wrap:balance}
+.rank-d{max-width:30em;margin:0 auto}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.stat{border:2px solid var(--ink);border-radius:12px;padding:10px 6px;background:var(--paper)}
+.stat b{display:block;font-family:var(--f-display);font-weight:400;font-size:26px;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.record{display:inline-block;margin-top:16px;font-family:var(--f-hand);font-size:24px;color:var(--pink);transform:rotate(-2deg)}
+.review{margin-top:26px}
+.h2{font-family:var(--f-display);font-weight:400;font-size:clamp(24px,6vw,34px);line-height:1.1;margin:4px 0 10px;text-wrap:balance}
+.h3{font-family:var(--f-display);font-weight:400;font-size:20px;margin:0 0 12px}
+.rev{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.rev li{background:var(--card);border:2px solid var(--ink);border-left:8px solid var(--bad);border-radius:10px;padding:10px 14px;display:grid;gap:2px}
+.rev .q{font-size:15px;color:var(--muted)}
+.rev .a{font-weight:700}
+.clean{font-family:var(--f-hand);font-size:22px;color:var(--good)}
+
+/* party */
+.setup{display:grid;gap:18px}
+.field{display:grid;gap:8px}
+.flabel{font-weight:800;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{border:2px solid var(--ink);background:var(--card);border-radius:10px;padding:7px 16px;font-weight:700}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.teams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.team-row{display:flex;align-items:center;gap:8px}
+.team-row i,.tm i{flex:none;width:14px;height:14px;border-radius:50%;border:2px solid var(--ink)}
+.team-in{width:100%;border:var(--line);border-radius:10px;padding:9px 12px;font:inherit;font-weight:600;background:var(--card);color:var(--ink)}
+.team-in:focus-visible{outline:3px solid var(--blue);outline-offset:1px}
+.board{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tm{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:10px;padding:5px 10px;background:var(--card);font-weight:700;font-size:15px}
+.tm b{font-family:var(--f-display);font-weight:400;font-variant-numeric:tabular-nums;margin-left:2px}
+.tm.cur{background:var(--yellow);box-shadow:3px 3px 0 var(--ink)}
+.intro{border-top:12px solid var(--team,var(--pink))}
+.teamname{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,8vw,52px);line-height:1.02;margin:4px 0 16px;text-wrap:balance}
+.rulebox{background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:14px 16px;display:grid;gap:8px;margin-bottom:18px}
+.ptype{font-family:var(--f-display);font-size:20px;color:var(--blue)}
+.ex{font-family:var(--f-hand);font-size:19px;color:var(--pink)}
+.ptop{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.pinfo{flex:1 1 140px}
+.gotn{font-size:18px}
+.gotn b{font-family:var(--f-display);font-weight:400;font-size:24px}
+.timer{--p:1;width:104px;height:104px;flex:none;border-radius:50%;border:var(--line);background:conic-gradient(var(--pink) calc(var(--p)*1turn),var(--card) 0);display:grid;place-items:center;box-shadow:3px 3px 0 var(--ink)}
+.timer span{width:72px;height:72px;border-radius:50%;background:var(--card);border:var(--line);display:grid;place-items:center;font-family:var(--f-display);font-size:30px;font-variant-numeric:tabular-nums}
+.timer.hurry{background:conic-gradient(var(--bad) calc(var(--p)*1turn),var(--card) 0)}
+.timer.hurry span{color:var(--bad)}
+.pcard{background:var(--card);border:var(--line);border-radius:20px;box-shadow:var(--shadow);padding:28px 20px;min-height:210px;display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:clamp(34px,9vw,58px);line-height:1.08;word-break:break-word}
+.pcard.t-croc{font-size:clamp(26px,6.5vw,40px);background:var(--pink-t)}
+.pcard.t-nonsense{font-family:var(--f-body);font-weight:800;font-size:clamp(22px,5.4vw,32px);line-height:1.3;background:var(--blue-t)}
+.paused{font-family:var(--f-hand);color:var(--muted)}
+.gloss{margin-top:10px;text-align:center;font-family:var(--f-hand);font-size:19px;color:var(--blue)}
+.prow{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin-top:18px}
+.prow .btn{padding:16px 10px;font-size:19px}
+.log{list-style:none;margin:6px 0 18px;padding:0;display:grid;gap:6px}
+.log li{display:flex;gap:10px;align-items:baseline;border-bottom:1.5px dashed rgba(27,21,48,.25);padding:4px 0}
+.log li.ok span:first-child{color:var(--good);font-weight:800}
+.log li.no{color:var(--muted)}
+.podium{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px;text-align:left}
+.podium li{display:flex;align-items:center;gap:12px;border:2px solid var(--ink);border-radius:12px;padding:10px 14px;background:var(--paper);font-weight:700}
+.podium li:first-child{background:var(--yellow);box-shadow:3px 3px 0 var(--ink)}
+.podium .place{font-family:var(--f-display);font-weight:400;width:1.6em}
+.podium .pscore{margin-left:auto;font-family:var(--f-display);font-weight:400;font-size:22px;font-variant-numeric:tabular-nums}
+
+/* AI generator */
+.gen-panel{margin-top:26px;background:var(--card);border:var(--line);border-radius:18px;box-shadow:5px 5px 0 var(--blue);padding:18px 20px;display:grid;gap:16px}
+.gen-head{display:flex;gap:14px;align-items:flex-start}
+.gen-badge{flex:none;font-family:var(--f-display);font-size:18px;background:var(--blue);color:#fff;border:var(--line);border-radius:12px;width:48px;height:48px;display:grid;place-items:center;transform:rotate(-6deg);text-shadow:2px 1.5px 0 var(--pink)}
+.gen-title{font-family:var(--f-display);font-weight:400;font-size:22px;line-height:1.1;margin:2px 0 4px}
+.gen-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.gen-theme{max-width:520px}
+.gen-panel .btn{justify-self:start}
+.btn.blue{background:var(--blue);color:#fff}
+.genbar{height:18px;border:var(--line);border-radius:999px;background:var(--paper);overflow:hidden;margin:14px 0 10px}
+.genbar i{display:block;height:100%;background:repeating-linear-gradient(-45deg,var(--pink) 0 10px,#ff6fbd 10px 20px);border-right:2.5px solid var(--ink);transition:width .4s ease}
+.ai-chip{font-size:12px;font-weight:800;background:var(--blue);color:#fff;border-radius:999px;padding:2px 9px}
+
+.prog{display:flex;align-items:center;gap:12px;margin:-4px 0 16px}
+.prog-t{font-size:13px;font-weight:800;color:var(--muted);white-space:nowrap}
+.segs{flex:1;display:flex;gap:4px}
+.seg-i{flex:1;height:8px;border-radius:4px;background:rgba(27,21,48,.13)}
+.seg-i.ok{background:var(--good)}
+.seg-i.no{background:var(--bad)}
+.seg-i.cur{background:var(--yellow);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.sc-l{font-family:var(--f-body);font-size:12px;font-weight:700;color:var(--muted);margin-left:-4px}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+.shake{animation:shake .45s ease}
+@keyframes shake{0%,100%{transform:none}20%{transform:translateX(-8px) rotate(-.6deg)}40%{transform:translateX(7px) rotate(.5deg)}60%{transform:translateX(-5px)}80%{transform:translateX(3px)}}
+.pop{animation:pop .35s ease}
+@keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+
+@media (max-width:560px){
+  .shell{padding:10px 16px 44px}
+  .modes{grid-template-columns:1fr;gap:16px}
+  .mode{min-height:0}
+  .teams{grid-template-columns:1fr}
+  .stage{padding:18px 16px}
+  .avatar{width:64px;height:64px;font-size:36px}
+  .opt{font-size:17px;padding:11px 12px}
+  .stats b{font-size:22px}
+  .prow{grid-template-columns:1fr 1.3fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <button class="logo" data-act="home" aria-label="На главную">УГАРНЫЙ <b>EN</b></button>
+    <div class="toggles">
+      <button class="tog" id="tog-voice" data-act="toggle-voice" aria-pressed="true">Автоозвучка</button>
+      <button class="tog" id="tog-sfx" data-act="toggle-sfx" aria-pressed="true">Звуки</button>
+      <label class="tog vsel" for="voice-sel">🔊 Голос<select id="voice-sel" aria-label="Голос озвучки"><option value="">Авто</option></select></label>
+    </div>
+  </header>
+  <main id="app" aria-live="polite"></main>
+</div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script>
+const ELEVENLABS_API_KEY = "PASTE_KEY_HERE";
+(() => {
+'use strict';
+
+/* ======================= CONTENT ======================= */
+
+// Вопросы лежат в data/*.json и загружаются при старте (см. loadData).
+let WORDS = [], CROC = [], NS = {s:[], v:[], o:[], e:[]};
+
+const MODES = {
+  hotel:{num:"01",title:"Отель «Кукуха»",tag:"Диалоги",cls:"m-hotel",data:[],desc:"Ты на ресепшене. Гости — Дракула, зомби и кот-миллионер. Ответь им так, чтобы никто не пострадал."},
+  runglish:{num:"02",title:"Рунглиш-капкан",tag:"Ошибки русских",cls:"m-run",data:[],desc:"Как не спросить «How are deals?» и не «сесть на диету». Ловим самые смешные ошибки русских."},
+  grammar:{num:"03",title:"Бред-грамматика",tag:"Грамматика",cls:"m-gram",data:[],desc:"Бабушка на скейте, пингвины в холодильнике. Вставь правильное слово в безумное предложение."},
+  emoji:{num:"04",title:"Эмодзи-шифр",tag:"Слова",cls:"m-emoji",data:[],desc:"Масло + муха = ? Разгадай английское слово или фразу по эмодзи."}
+};
+const QN = 10;
+const YES = ["Есть!","В точку!","Лондон гордится!","Шекспир аплодирует!","Чётко!","Биг-Бен пробил в твою честь!","Королевский уровень!","Чай с молоком тебе за это!","Красота!"];
+const NO = ["Ой-ой.","Мимо!","Британец уронил чашку.","Ну, почти.","Кукуха дрогнула.","Чай пролился.","Королева нахмурилась."];
+const RANKS = [
+  {min:10,e:"👑",t:"Его Величество English",d:"Десять из десяти. Букингемский дворец просит автограф."},
+  {min:8,e:"🐈",t:"Кот с британским паспортом",d:"Почти идеально. Акцент есть, но уверенности хоть отбавляй."},
+  {min:6,e:"☕",t:"Почти лондонец",d:"Уже пьёшь чай с молоком, но иногда ещё «сидишь на диете»."},
+  {min:4,e:"🧳",t:"Турист с разговорником",d:"В аэропорту выживешь. В отеле «Кукуха» — пока под вопросом."},
+  {min:0,e:"🥔",t:"Картошка с акцентом",d:"Английский пока тебя не узнаёт, но уже здоровается. Ещё раунд?"}
+];
+const PTYPES = {
+  alias:{name:"Объясни",rule:"Объясняй слово по-английски. Нельзя называть само слово, однокоренные слова и переводить на русский. Команда выкрикивает ответ по-английски.",ex:"BANANA → «It's yellow. Monkeys love it.»",who:"Телефон у того, кто объясняет. Остальные не подглядывают!"},
+  croc:{name:"Покажи",rule:"Покажи фразу без слов и звуков, только жестами и мимикой. Команда должна назвать её по-английски. Своими словами можно, главное — смысл.",ex:"a cat in the shower → мокрый и очень недовольный кот",who:"Телефон у того, кто показывает. Остальные не подглядывают!"},
+  nonsense:{name:"Переведи бред",rule:"Ведущий читает вслух безумное предложение по-английски. Команда переводит его на русский. Перевели правильно — очко.",ex:"My grandmother eats a pink sock at the disco.",who:"Телефон у игрока из другой команды: он читает вслух и сверяется со шпаргалкой."}
+};
+const PORDER = ["alias","croc","nonsense"];
+const TEAM_DEFAULT = ["Злые пельмени","Ленивцы на минималках","Бабушкин Wi-Fi","Кетчуп в чае"];
+const TEAM_COLORS = ["var(--pink)","var(--blue)","var(--yellow)","var(--good)"];
+
+/* ---- AI generator: prompts per mode ---- */
+const GEN = {
+  hotel:{chars:5200, schema:'{"g":"эмодзи гостя","n":"смешное имя гостя по-русски","p":высота голоса от 0.2 до 2,"r":скорость речи от 0.6 до 1.4,"line":"реплика гостя по-английски","tr":"перевод реплики на русский","o":[["правильный ответ администратора по-английски","по-русски: перевод ответа в «ёлочках» + смешная реакция гостя"],["неверный, но смешной ответ по-английски","по-русски: почему это смешно или неверно"],["второй неверный ответ","комментарий по-русски"]]}',
+    task:'Ситуации в безумном отеле: гость (животное, монстр, сказочный персонаж или ожившая вещь) обращается к администратору. Игрок выбирает ответ. Неверные варианты — смешные недоразумения: многозначные слова (book, free, close, bank, lift), ответ не на тот вопрос, буквальное понимание.'},
+  runglish:{chars:3600, schema:'{"ru":"русская фраза","ctx":"необязательное короткое пояснение ситуации","o":[["правильный английский вариант","по-русски: короткое объяснение"],["типичный ляп русскоговорящего","по-русски: смешно, почему так нельзя"],["второй ляп","комментарий по-русски"]]}',
+    task:'Русская бытовая фраза и три английских варианта: правильный и два типичных «рунглиш»-ляпа русскоговорящих (дословный перевод, лишний am, не тот предлог, ложный друг переводчика). Комментарии короткие и смешные.'},
+  grammar:{chars:2800, schema:'{"s":"абсурдное английское предложение с одним пропуском ___","o":["правильный вариант","неверный","неверный"],"rule":"правило по-русски в одну-две фразы","tr":"перевод полного предложения на русский"}',
+    task:'Смешное абсурдное предложение с одним пропуском ___ и три варианта, которые проверяют грамматику: Present Simple и Continuous, Past Simple, to be, there is/are, can, степени сравнения, артикли, предлоги, much/many, местоимения. Правильный вариант должен быть ровно один, без двусмысленности.'},
+  emoji:{chars:2800, schema:'{"e":"2–3 эмодзи через « + »","o":["правильный ответ","ловушка","ловушка","ловушка"],"tr":"перевод на русский","note":"по-русски: как собирается слово или что значит фраза"}',
+    task:'Эмодзи-ребус: составное английское слово (butter + fly = butterfly), идиома или короткое предложение, зашифрованные 2–3 эмодзи через « + ». Ловушки правдоподобные, но неверные.'}
+};
+const LEVELS = [["A1","A1"],["A2","A2"],["A1–A2","A1–A2"]];
+let SAMPLE = null;          // claude.use("sample") namespace, when the viewer offers it
+let DATA_READY = false, DATA_ERR = '', pendingStart = null;
+let genCtl = null;
+
+/* ======================= UTIL ======================= */
+const $app = document.getElementById('app');
+const reduceMotion = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pick = a => a[Math.floor(Math.random()*a.length)];
+function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+const range = n => Array.from({length:n},(_,i)=>i);
+
+const KEY = 'ugarny-english-v1';
+function loadSaved(){ try{ return JSON.parse(localStorage.getItem(KEY)) || {}; }catch(e){ return {}; } }
+const saved = loadSaved(); saved.best = saved.best || {};
+const settings = Object.assign({voice:true, sfx:true}, saved.settings || {});
+saved.seen = saved.seen || {};
+const genCfg = Object.assign({mode:'hotel', theme:'', level:'A1–A2'}, saved.gen || {});
+function persist(){ saved.settings = settings; saved.gen = genCfg; try{ localStorage.setItem(KEY, JSON.stringify(saved)); }catch(e){} }
+
+/* --- question keys, so a player sees new questions first --- */
+function hash(s){ let h = 5381; s = String(s); for(let i=0;i<s.length;i++) h = ((h<<5) + h + s.charCodeAt(i)) | 0; return (h>>>0).toString(36); }
+function keyOf(mode, q){ return hash(mode === 'hotel' ? q.line : mode === 'runglish' ? q.ru + (q.ctx || '') : mode === 'grammar' ? q.s : q.o[0]); }
+function freshCount(mode){ const seen = new Set(saved.seen[mode] || []); return MODES[mode].data.filter(q => !seen.has(keyOf(mode, q))).length; }
+function pickQueue(mode){
+  const data = MODES[mode].data, seen = new Set(saved.seen[mode] || []);
+  const fresh = shuffle(range(data.length).filter(i => !seen.has(keyOf(mode, data[i]))));
+  let q = fresh.slice(0, QN);
+  if(q.length < QN){
+    const rest = shuffle(range(data.length).filter(i => !q.includes(i)));
+    q = q.concat(rest.slice(0, QN - q.length));
+    saved.seen[mode] = [];          // every question was seen: start a new lap
+  }
+  saved.seen[mode] = (saved.seen[mode] || []).concat(q.map(i => keyOf(mode, data[i])));
+  persist();
+  return shuffle(q);
+}
+
+/* --- validation: same rules as validate.mjs, for generated questions --- */
+const okStr = (v, min, max) => typeof v === 'string' && v.trim().length >= (min||1) && v.length <= (max||400);
+const normS = s => String(s).toLowerCase().replace(/[^a-zа-яё0-9]+/gi,' ').trim();
+const allUniq = a => new Set(a.map(normS)).size === a.length;
+const VALID = {
+  hotel: q => okStr(q.g,1,16) && okStr(q.n,2,60) && okStr(q.line,3,160) && okStr(q.tr,3,200) && Array.isArray(q.o) && q.o.length === 3 && q.o.every(x => Array.isArray(x) && okStr(x[0],1,160) && okStr(x[1],3,260)) && allUniq(q.o.map(x => x[0])),
+  runglish: q => okStr(q.ru,2,120) && (q.ctx == null || okStr(q.ctx,2,120)) && Array.isArray(q.o) && q.o.length === 3 && q.o.every(x => Array.isArray(x) && okStr(x[0],1,140) && okStr(x[1],3,260)) && allUniq(q.o.map(x => x[0])),
+  grammar: q => okStr(q.s,5,180) && q.s.split('___').length === 2 && Array.isArray(q.o) && q.o.length === 3 && q.o.every(x => okStr(x,1,40)) && allUniq(q.o) && okStr(q.rule,5,220) && okStr(q.tr,3,200),
+  emoji: q => okStr(q.e,1,40) && !/[a-zа-яё]/i.test(q.e) && Array.isArray(q.o) && q.o.length === 4 && q.o.every(x => okStr(x,1,80)) && allUniq(q.o) && okStr(q.tr,2,160) && okStr(q.note,3,260)
+};
+function cleanItem(mode, q){
+  if(mode === 'hotel'){
+    q.p = typeof q.p === 'number' ? Math.min(2, Math.max(.2, q.p)) : 1;
+    q.r = typeof q.r === 'number' ? Math.min(1.4, Math.max(.6, q.r)) : 1;
+  }
+  if(mode === 'runglish' && !q.ctx) delete q.ctx;
+  return q;
+}
+
+/* --- data files --- */
+async function loadData(){
+  try{
+    const get = async f => { const r = await fetch('data/' + f + '.json', {cache:'no-cache'}); if(!r.ok) throw new Error(f + ': ' + r.status); return r.json(); };
+    const [h, ru, g, em, party] = await Promise.all(['hotel','runglish','grammar','emoji','party'].map(get));
+    MODES.hotel.data = h.filter(VALID.hotel).map(q => cleanItem('hotel', q));
+    MODES.runglish.data = ru.filter(VALID.runglish);
+    MODES.grammar.data = g.filter(VALID.grammar);
+    MODES.emoji.data = em.filter(VALID.emoji);
+    WORDS = party.words || []; CROC = party.croc || []; NS = party.nonsense || NS;
+    DATA_READY = true;
+  }catch(e){
+    DATA_ERR = 'Не получилось загрузить вопросы (' + e.message + '). Если игра открыта как файл с диска, запусти её через локальный сервер.';
+  }
+  if(S.screen === 'home') refreshHomeData();
+  else if(DATA_READY && (S.screen === 'quiz' || S.screen === 'result')) render();
+  if(DATA_READY && pendingStart){ const m = pendingStart; pendingStart = null; startMode(m); }
+}
+
+/* --- speech --- */
+let VOICES = [];
+function loadVoices(){ try{ VOICES = window.speechSynthesis ? speechSynthesis.getVoices() : []; }catch(e){ VOICES = []; } fillVoiceSel(); }
+// Natural/neural voices first (Edge, Chrome, Siri), robotic and novelty voices out.
+function voiceScore(v){
+  const n = v.name.toLowerCase(); let s = 0;
+  if(/natural|neural/.test(n)) s += 60;
+  if(/premium|enhanced|siri/.test(n)) s += 45;
+  if(/online/.test(n)) s += 20;
+  if(/google/.test(n)) s += 30;
+  if(/samantha|daniel|karen|moira|serena|kate|oliver|arthur|martha|libby|sonia|ryan|aria|jenny|emma|brian|ava|andrew|stephanie|jamie/.test(n)) s += 15;
+  if(/en[-_]gb/i.test(v.lang)) s += 6; else if(/en[-_]us/i.test(v.lang)) s += 4;
+  if(/espeak|compact|novelty|bad news|good news|bells|boing|bubbles|cellos|whisper|zarvox|trinoids|albert|fred|junior|ralph|jester|organ|superstar|wobble|bahh|hysterical|grandma|grandpa|rocko|shelley|flo|eddy|reed|sandy/.test(n)) s -= 100;
+  return s;
+}
+function enVoices(){ return VOICES.filter(v => /^en([-_]|$)/i.test(v.lang) && voiceScore(v) > -50).sort((a,b) => voiceScore(b) - voiceScore(a)); }
+function fillVoiceSel(){
+  const sel = document.getElementById('voice-sel'); if(!sel) return;
+  const short = n => n.replace(/^(Microsoft|Google)\s+/,'').replace(/\s+Online \(Natural\)/,' ★').split(' - ')[0].slice(0,30);
+  sel.innerHTML = '<option value="">Авто</option>' + enVoices().map(v => `<option value="${esc(v.name)}"${v.name === settings.voiceName ? ' selected' : ''}>${esc(short(v.name))}</option>`).join('');
+}
+loadVoices();
+try{ if(window.speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices; }catch(e){}
+function enVoice(){
+  const list = enVoices();
+  return (settings.voiceName && list.find(v => v.name === settings.voiceName)) || list[0] || null;
+}
+let ttsAudio = null;
+async function say(text){
+  const clean = String(text).replace(/[^\x20-\x7E]/g,' ').replace(/\s+/g,' ').trim();
+  if(!clean) return;
+  try{
+    if(ttsAudio){ ttsAudio.pause(); ttsAudio = null; }
+    const r = await fetch('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM', {
+      method:'POST',
+      headers:{'xi-api-key':ELEVENLABS_API_KEY,'Content-Type':'application/json','Accept':'audio/mpeg'},
+      body:JSON.stringify({text:clean, model_id:'eleven_flash_v2_5'})
+    });
+    if(!r.ok) return;
+    ttsAudio = new Audio(URL.createObjectURL(await r.blob()));
+    ttsAudio.play().catch(() => {});
+  }catch(e){}
+}
+
+/* --- sound effects --- */
+let AC = null;
+function audio(){ try{ AC = AC || new (window.AudioContext || window.webkitAudioContext)(); if(AC.state === 'suspended') AC.resume(); return AC; }catch(e){ return null; } }
+function beep(f1, f2, dur, type, delay, vol){
+  const c = audio(); if(!c) return;
+  const t = c.currentTime + (delay || 0);
+  const o = c.createOscillator(), g = c.createGain();
+  o.type = type || 'triangle';
+  o.frequency.setValueAtTime(f1, t);
+  if(f2) o.frequency.exponentialRampToValueAtTime(f2, t + dur);
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(vol || .16, t + .02);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g); g.connect(c.destination);
+  o.start(t); o.stop(t + dur + .05);
+}
+function sfx(kind){
+  if(!settings.sfx) return;
+  try{
+    if(kind === 'good'){ beep(523,0,.12,'triangle',0); beep(784,0,.12,'triangle',.1); beep(1047,0,.24,'triangle',.2); }
+    else if(kind === 'bad'){ beep(330,311,.22,'sawtooth',0,.07); beep(311,294,.22,'sawtooth',.25,.07); beep(294,185,.6,'sawtooth',.5,.07); }
+    else if(kind === 'tick'){ beep(1250,0,.05,'square',0,.05); }
+    else if(kind === 'buzz'){ beep(160,110,.75,'square',0,.1); }
+    else if(kind === 'pop'){ beep(620,980,.09,'sine',0,.14); }
+    else if(kind === 'win'){ [523,659,784,1047,784,1047].forEach((f,i)=>beep(f,0,.16,'triangle',i*.12,.14)); }
+  }catch(e){}
+}
+
+/* --- confetti --- */
+const cv = document.getElementById('confetti');
+const cx = cv.getContext ? cv.getContext('2d') : null;
+let parts = [], raf = 0;
+function confetti(n){
+  if(reduceMotion || !cx) return;
+  const dpr = window.devicePixelRatio || 1;
+  cv.width = innerWidth * dpr; cv.height = innerHeight * dpr; cx.setTransform(dpr,0,0,dpr,0,0);
+  const cols = ['#FF3DA5','#2F49FF','#FFE14D','#1B1530','#0F9D58'];
+  for(let i=0;i<n;i++){
+    parts.push({x:innerWidth/2 + (Math.random()-.5)*innerWidth*.5, y:innerHeight*.3 + (Math.random()-.5)*60,
+      vx:(Math.random()-.5)*13, vy:-Math.random()*13-4, w:6+Math.random()*7, h:4+Math.random()*5,
+      c:cols[i%cols.length], a:Math.random()*6, va:(Math.random()-.5)*.4});
+  }
+  if(!raf) raf = requestAnimationFrame(step);
+}
+function step(){
+  cx.clearRect(0,0,innerWidth,innerHeight);
+  parts.forEach(p => { p.vy += .35; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.a += p.va;
+    cx.save(); cx.translate(p.x,p.y); cx.rotate(p.a); cx.fillStyle = p.c; cx.fillRect(-p.w/2,-p.h/2,p.w,p.h); cx.restore(); });
+  parts = parts.filter(p => p.y < innerHeight + 40);
+  raf = parts.length ? requestAnimationFrame(step) : 0;
+  if(!raf) cx.clearRect(0,0,innerWidth,innerHeight);
+}
+
+const heart = full => `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 20.5s-8-4.9-8-11A4.5 4.5 0 0 1 12 6.6 4.5 4.5 0 0 1 20 9.5c0 6.1-8 11-8 11z" fill="${full?'#FF3DA5':'none'}" stroke="#1B1530" stroke-width="2" stroke-linejoin="round"/></svg>`;
+
+/* ======================= STATE ======================= */
+let S = {screen:'home'};
+let tickH = null;
+
+const srcData = () => S.custom || MODES[S.mode].data;
+const cur = () => srcData()[S.queue[S.i]];
+const optText = (mode, item, k) => (mode === 'hotel' || mode === 'runglish') ? item.o[k][0] : item.o[k];
+function fullSentence(item){ return item.s.replace('___', item.o[0]); }
+function spokenAnswer(mode, item){
+  if(mode === 'grammar') return fullSentence(item);
+  return optText(mode, item, 0);
+}
+
+function startMode(mode, custom){
+  stopTimer();
+  if(!custom && !DATA_READY){ pendingStart = mode; return; }
+  const queue = custom ? shuffle(range(custom.length)) : pickQueue(mode);
+  S = {screen:'quiz', mode, custom:custom || null, queue, i:0, score:0, lives:3, streak:0, bestStreak:0, correct:0, res:[], mistakes:[], party:S.party};
+  loadQ();
+}
+
+/* --- AI generation --- */
+function genPrompt(mode){
+  const G = GEN[mode], base = MODES[mode].data;
+  const ex = shuffle(base).slice(0, 2).map(q => JSON.stringify(q)).join('\n');
+  const theme = genCfg.theme.trim();
+  return `Ты пишешь контент для смешной игры по английскому для русскоговорящих учеников уровня ${genCfg.level}.
+Режим: ${MODES[mode].title}. ${G.task}
+${theme ? 'Тема всех вопросов: «' + theme.slice(0, 60) + '». ' : 'Темы выбирай разные. '}Нужно ровно 10 новых вопросов.
+
+Формат одного вопроса (JSON):
+${G.schema}
+
+Примеры из игры (не повторяй их):
+${ex}
+
+Правила:
+- Первый вариант в массиве "o" всегда правильный.
+- Английский грамотный, лексика и грамматика уровня ${genCfg.level}, британский вариант.
+- Юмор добрый и абсурдный, понятный подростку. Без реальных людей, брендов, политики, алкоголя, курения и вейпов, насилия и пошлости.
+- Комментарии и переводы на русском, короткие.
+- Внутри строк не используй двойные кавычки, бери «ёлочки».
+Ответь только JSON-массивом из 10 объектов. Без пояснений и без markdown.`;
+}
+function parseItems(mode, text){
+  const a = text.indexOf('['), b = text.lastIndexOf(']');
+  if(a < 0 || b <= a) return [];
+  let arr; try{ arr = JSON.parse(text.slice(a, b + 1)); }catch(e){ return []; }
+  if(!Array.isArray(arr)) return [];
+  const known = new Set(MODES[mode].data.map(q => keyOf(mode, q)));
+  const seen = new Set();
+  return arr.filter(q => q && typeof q === 'object' && VALID[mode](q)).map(q => cleanItem(mode, q)).filter(q => {
+    const k = keyOf(mode, q); if(known.has(k) || seen.has(k)) return false; seen.add(k); return true;
+  });
+}
+async function generate(){
+  if(!SAMPLE || !DATA_READY) return;
+  const mode = genCfg.mode;
+  persist();
+  if(genCtl) try{ genCtl.abort(); }catch(e){}
+  genCtl = new AbortController();
+  S = {screen:'gen', gen:{mode, theme:genCfg.theme.trim(), level:genCfg.level, phase:'working', chars:0, err:''}, party:S.party};
+  render(); scrollTop();
+  try{
+    const res = await SAMPLE(genPrompt(mode), {
+      model:'claude-sonnet-5-5', effort:'medium', modelTier:'default', signal:genCtl.signal,
+      onText: ({text}) => {
+        if(S.screen !== 'gen') return;
+        S.gen.chars = text.length;
+        const bar = document.getElementById('genbar'), st = document.getElementById('gen-status');
+        if(bar) bar.style.width = Math.min(96, 6 + 90 * text.length / GEN[mode].chars).toFixed(1) + '%';
+        if(st) st.textContent = text.startsWith('Thinking') ? 'Claude придумывает гостей и шутки…' : `Пишет вопросы… ${text.length} символов`;
+      }
+    });
+    if(S.screen !== 'gen') return;
+    const items = parseItems(mode, res && res.text || '');
+    if(items.length < 5){ S.gen.phase = 'error'; S.gen.err = 'Claude ответил в неожиданном формате. Попробуй ещё раз, обычно со второго раза получается.'; render(); return; }
+    startMode(mode, items);
+  }catch(e){
+    if(S.screen !== 'gen') return;
+    if(e && e.name === 'AbortError') return;
+    const code = e && e.code;
+    if(code === 'not_granted'){ SAMPLE = null; S.gen.err = 'Генерация не разрешена для этой страницы. Играй по базе вопросов.'; }
+    else if(code === 'rate_limited'){ S.gen.err = 'Слишком много запросов подряд. Подожди минутку и попробуй снова.'; }
+    else S.gen.err = 'Не получилось сгенерировать вопросы' + (e && e.message ? ': ' + e.message : '.');
+    S.gen.phase = 'error'; render();
+  }
+}
+function loadQ(){
+  const item = cur();
+  S.answered = null; S.hint = false; S.removed = null; S.verdict = ''; S.lastPts = 0;
+  S.order = shuffle(range(item.o.length));
+  S.fx = 'enter';
+  render(); scrollTop();
+  if(S.mode === 'hotel' && settings.voice) say(item.line, item.p, item.r);
+}
+function answer(k){
+  if(S.answered != null || S.removed === k) return;
+  const item = cur(), ok = k === 0;
+  S.answered = k; S.just = true;
+  if(ok){
+    S.streak++; S.bestStreak = Math.max(S.bestStreak, S.streak);
+    const pts = 100 + Math.min(100, 25*(S.streak-1)) - (S.hint ? 50 : 0);
+    S.score += pts; S.lastPts = pts; S.correct++; S.res[S.i] = true; S.verdict = pick(YES);
+    sfx('good'); if(S.streak >= 3) confetti(45);
+  } else {
+    S.lives--; S.streak = 0; S.res[S.i] = false; S.mistakes.push(S.queue[S.i]); S.verdict = pick(NO);
+    sfx('bad'); S.fx = 'shake';
+  }
+  render();
+  const fb = document.querySelector('.fb');
+  if(fb) fb.scrollIntoView({block:'nearest', behavior: reduceMotion ? 'auto' : 'smooth'});
+  const nx = document.querySelector('[data-act="next"]'); if(nx) nx.focus({preventScroll:true});
+  if(settings.voice){ const t = spokenAnswer(S.mode, item); setTimeout(() => say(t), ok ? 380 : 1000); }
+}
+function hint(){
+  if(S.answered != null || S.hint) return;
+  S.hint = true;
+  if(S.mode === 'emoji' || S.mode === 'runglish') S.removed = pick(S.order.filter(k => k !== 0));
+  render();
+}
+function next(){
+  if(S.lives <= 0 || S.i >= S.queue.length - 1) return finish();
+  S.i++; loadQ();
+}
+function finish(){
+  const prev = saved.best[S.mode] || 0;
+  S.newRecord = S.score > prev;
+  if(S.newRecord){ saved.best[S.mode] = S.score; persist(); }
+  S.livesOut = S.lives <= 0 && S.i < S.queue.length - 1;
+  S.screen = 'result'; render(); scrollTop();
+  if(S.correct >= 8){ confetti(150); sfx('win'); }
+}
+
+/* --- party --- */
+function partySetup(){
+  stopTimer();
+  if(!S.party) S.party = {n:2, names:TEAM_DEFAULT.slice(), time:60, rounds:3};
+  S.screen = 'partySetup'; render(); scrollTop();
+}
+function partyGo(){
+  const P = S.party;
+  document.querySelectorAll('.team-in[data-i]').forEach(inp => { P.names[+inp.dataset.i] = inp.value; });
+  P.teams = P.names.slice(0, P.n).map((nm,i) => ({name:(nm||'').trim() || TEAM_DEFAULT[i], score:0}));
+  P.round = 0; P.turn = 0; P.deck = {};
+  newTurn(); S.screen = 'partyTurn'; render(); scrollTop();
+}
+function newTurn(){ const P = S.party; P.phase = 'ready'; P.left = P.time; P.log = []; P.card = null; P.gloss = false; }
+const ptype = () => PORDER[S.party.round % PORDER.length];
+function drawCard(){
+  const P = S.party, t = ptype();
+  if(t === 'nonsense'){
+    const a = pick(NS.s), b = pick(NS.v), c = pick(NS.o), d = pick(NS.e);
+    P.card = {t:`${a[0]} ${b[0]} ${c[0]} ${d[0]}.`, g:`${a[1]} · ${b[1]} · ${c[1]} · ${d[1]}`};
+  } else {
+    const list = t === 'alias' ? WORDS : CROC;
+    if(!P.deck[t] || !P.deck[t].length) P.deck[t] = shuffle(range(list.length));
+    P.card = {t:list[P.deck[t].pop()]};
+  }
+}
+function runTimer(){
+  const P = S.party; P.phase = 'running'; stopTimer();
+  let last = performance.now(), lastSec = Math.ceil(P.left);
+  tickH = setInterval(() => {
+    const now = performance.now();
+    P.left = Math.max(0, P.left - (now - last)/1000); last = now;
+    const sec = Math.ceil(P.left);
+    const el = document.getElementById('tsec'), tm = document.getElementById('timer');
+    if(el) el.textContent = sec;
+    if(tm){ tm.style.setProperty('--p', (P.left/P.time).toFixed(3)); tm.classList.toggle('hurry', P.left <= 5); }
+    if(sec !== lastSec){ lastSec = sec; if(sec <= 5 && sec > 0) sfx('tick'); }
+    if(P.left <= 0){ stopTimer(); P.phase = 'done'; sfx('buzz'); render(); }
+  }, 100);
+}
+function stopTimer(){ if(tickH){ clearInterval(tickH); tickH = null; } }
+function partyStart(){ drawCard(); runTimer(); render(); }
+function partyPause(){
+  const P = S.party;
+  if(P.phase === 'running'){ stopTimer(); P.phase = 'paused'; }
+  else if(P.phase === 'paused'){ runTimer(); }
+  render();
+}
+function partyMark(ok){
+  const P = S.party; if(P.phase !== 'running' || !P.card) return;
+  P.log.push({t:P.card.t, ok});
+  if(ok){ P.teams[P.turn].score++; sfx('pop'); }
+  P.gloss = false;
+  drawCard(); render();
+}
+function partyNext(){
+  const P = S.party;
+  P.turn++;
+  if(P.turn >= P.teams.length){ P.turn = 0; P.round++; }
+  if(P.round >= P.rounds){ S.screen = 'partyEnd'; render(); scrollTop(); confetti(170); sfx('win'); return; }
+  newTurn(); render(); scrollTop();
+}
+function partyRematch(){
+  const P = S.party; P.teams.forEach(t => t.score = 0); P.round = 0; P.turn = 0;
+  newTurn(); S.screen = 'partyTurn'; render(); scrollTop();
+}
+
+/* ======================= RENDER ======================= */
+function scrollTop(){ try{ window.scrollTo({top:0, behavior:'auto'}); }catch(e){ window.scrollTo(0,0); } }
+function letters(word, cls){
+  return `<span class="${cls}" aria-hidden="true">${[...word].map((ch,i)=>`<span class="ch" style="animation-delay:${i*45}ms">${ch}</span>`).join('')}</span>`;
+}
+function dayIndex(n){ const d = new Date(); const start = new Date(d.getFullYear(),0,0); return Math.floor((d - start)/864e5) % n; }
+
+function renderHome(){
+  const tiles = Object.keys(MODES).map(k => {
+    const M = MODES[k];
+    return `<button class="mode ${M.cls}" data-act="start" data-mode="${k}">
+      <span class="num">${M.num}</span>
+      <span class="mt">${esc(M.title)}</span>
+      <span class="desc">${esc(M.desc)}</span>
+      <span class="meta"><span class="chip">${esc(M.tag)}</span><span class="best" id="meta-${k}">${tileMeta(k)}</span></span>
+    </button>`;
+  }).join('');
+  return `<section class="hero">
+      <h1 class="title" aria-label="Угарный English">${letters('УГАРНЫЙ','l1')}${letters('ENGLISH','l2')}</h1>
+      <p class="lead">Игра-шоу для уровня <span class="lvl">A1–A2</span>. Болтай с Дракулой, лови ошибки рунглиша, разгадывай эмодзи и устраивай вечеринку на английском. Смеёшься — значит, запоминаешь.</p>
+    </section>
+    <div class="sec-label">Пять режимов</div>
+    <div class="modes">
+      ${tiles}
+      <button class="mode m-party" data-act="party">
+        <span class="num">05</span>
+        <span class="mt">Вечеринка</span>
+        <span class="desc">Для компании: 2–4 команды и один телефон. Объясняй слова, показывай фразы жестами и переводи бред на скорость.</span>
+        <span class="meta"><span class="chip">2–4 команды</span><span class="best">таймер · очки · реванш</span></span>
+      </button>
+    </div>
+    <div id="gen-slot">${genPanelHTML()}</div>
+    <div id="pod-slot">${podHTML()}</div>
+    <p class="foot">Озвучка работает через голоса твоего браузера. Если звука нет, проверь громкость или открой игру в Chrome. Цифры 1–4 на клавиатуре выбирают ответ, Enter — дальше.</p>`;
+}
+
+function tileMeta(k){
+  if(DATA_ERR) return 'нет вопросов';
+  if(!DATA_READY) return 'загружаю…';
+  const n = MODES[k].data.length, f = freshCount(k), b = saved.best[k];
+  return `${b ? 'Рекорд ' + b + ' · ' : ''}${f === n ? n + ' вопросов' : 'новых ' + f + ' из ' + n}`;
+}
+function podHTML(){
+  if(DATA_ERR) return `<p class="note warn">${esc(DATA_ERR)}</p>`;
+  const list = MODES.runglish.data;
+  if(!list.length) return '';
+  const pod = list[dayIndex(list.length)];
+  return `<aside class="pod">
+      <span class="pod-label">Фраза дня</span>
+      <p class="pod-body">«${esc(pod.ru)}» → <b class="pod-en" lang="en">${esc(pod.o[0][0])}</b> <span class="pod-not">а не <s lang="en">${esc(pod.o[1][0])}</s></span></p>
+      <button class="mini" data-act="say" data-text="${esc(pod.o[0][0])}">🔊 Послушать</button>
+    </aside>`;
+}
+function genPanelHTML(){
+  if(!SAMPLE || !DATA_READY) return '';
+  const short = {hotel:'Отель', runglish:'Рунглиш', grammar:'Грамматика', emoji:'Эмодзи'};
+  return `<section class="gen-panel" aria-labelledby="gen-title">
+      <div class="gen-head">
+        <span class="gen-badge">ИИ</span>
+        <div><h2 class="gen-title" id="gen-title">Свежие вопросы от Claude</h2>
+        <p class="note">10 новых вопросов, которых нет в базе. Задай тему или оставь пустой — будет сюрприз.</p></div>
+      </div>
+      <div class="gen-grid">
+        <div class="field"><span class="flabel">Режим</span><div class="seg" role="group" aria-label="Режим для генерации">${Object.keys(short).map(k => `<button data-act="gen-mode" data-val="${k}" aria-pressed="${genCfg.mode===k}">${short[k]}</button>`).join('')}</div></div>
+        <div class="field"><span class="flabel">Уровень</span><div class="seg" role="group" aria-label="Уровень">${LEVELS.map(l => `<button data-act="gen-level" data-val="${l[0]}" aria-pressed="${genCfg.level===l[0]}">${l[1]}</button>`).join('')}</div></div>
+        <label class="field gen-theme" for="gen-theme"><span class="flabel">Тема (необязательно)</span>
+          <input class="team-in" id="gen-theme" maxlength="60" placeholder="космос, еда, школа, супергерои…" value="${esc(genCfg.theme)}"></label>
+      </div>
+      <button class="btn blue" data-act="gen-go">Сгенерировать и играть</button>
+    </section>`;
+}
+function refreshGenSlot(){ const el = document.getElementById('gen-slot'); if(el) el.innerHTML = genPanelHTML(); }
+function refreshHomeData(){
+  Object.keys(MODES).forEach(k => { const el = document.getElementById('meta-' + k); if(el) el.textContent = tileMeta(k); });
+  const pod = document.getElementById('pod-slot'); if(pod) pod.innerHTML = podHTML();
+  refreshGenSlot();
+}
+
+function renderGen(){
+  const G = S.gen, M = MODES[G.mode];
+  const head = `<div class="hud"><div class="hud-l"><button class="back" data-act="gen-cancel">← Меню</button><span class="mname">ИИ-генератор</span></div></div>`;
+  const what = `${esc(M.title)} · ${esc(G.level)}${G.theme ? ' · тема «' + esc(G.theme) + '»' : ''}`;
+  if(G.phase === 'error'){
+    return head + `<section class="stage">
+      <div class="eyebrow">Что-то пошло не так</div>
+      <h2 class="h2">${what}</h2>
+      <p class="note warn">${esc(G.err)}</p>
+      <div class="row">${SAMPLE ? '<button class="btn" data-act="gen-go">Попробовать ещё раз</button>' : ''}<button class="btn ghost" data-act="start" data-mode="${G.mode}">Играть по базе</button></div>
+    </section>`;
+  }
+  return head + `<section class="stage">
+      <div class="eyebrow">Claude сочиняет 10 вопросов</div>
+      <h2 class="h2">${what}</h2>
+      <div class="genbar" role="progressbar" aria-label="Генерация"><i id="genbar" style="width:${Math.min(96, 6 + 90 * G.chars / GEN[G.mode].chars).toFixed(1)}%"></i></div>
+      <p class="note" id="gen-status">${G.chars ? 'Пишет вопросы… ' + G.chars + ' символов' : 'Отправляю задание…'}</p>
+      <p class="note">Обычно это занимает 20–40 секунд. Первый раз Claude спросит разрешение.</p>
+      <div class="row"><button class="btn ghost" data-act="gen-cancel">Отмена</button></div>
+    </section>`;
+}
+
+function promptHTML(mode, item, done){
+  if(mode === 'hotel'){
+    return `<div class="guest"><div class="avatar" aria-hidden="true">${item.g}</div>
+        <div><div class="eyebrow">Гость у стойки</div><div class="gname">${esc(item.n)}</div></div></div>
+      <div class="bubble"><span lang="en">${esc(item.line)}</span>${S.hint || done ? `<div class="bubble-tr">${esc(item.tr)}</div>` : ''}</div>
+      <div class="tools"><button class="mini" data-act="say-q">🔊 Послушать</button>
+        <button class="mini" data-act="hint" ${S.hint||done?'disabled':''}>Перевод <small>−50</small></button></div>
+`;
+  }
+  if(mode === 'grammar'){
+    const parts = item.s.split('___');
+    const fill = done ? `<span class="gap filled">${esc(item.o[0])}</span>` : `<span class="gap">?</span>`;
+    return `<div class="eyebrow">Вставь пропущенное слово</div>
+      <p class="sentence" lang="en">${esc(parts[0])}${fill}${esc(parts[1] || '')}</p>
+      <div class="tools">${done ? `<button class="mini" data-act="say-q">🔊 Послушать</button>` : ''}
+        <button class="mini" data-act="hint" ${S.hint||done?'disabled':''}>Правило <small>−50</small></button></div>
+      ${S.hint && !done ? `<p class="tr">${esc(item.rule)}</p>` : ''}`;
+  }
+  if(mode === 'emoji'){
+    return `<div class="eyebrow">Что зашифровано?</div>
+      <div class="emo" role="img" aria-label="Эмодзи-загадка">${item.e.split(' + ').map(x=>`<span>${x}</span>`).join('<b class="plus">+</b>')}</div>
+      <div class="tools center">${done ? `<button class="mini" data-act="say-q">🔊 Послушать</button>` : ''}
+        <button class="mini" data-act="hint" ${S.hint||done?'disabled':''}>Убрать неверный <small>−50</small></button></div>`;
+  }
+  return `<div class="eyebrow">Как сказать по-английски?</div>
+    <p class="ru">«${esc(item.ru)}»</p>${item.ctx ? `<p class="ctx">${esc(item.ctx)}</p>` : ''}
+    <div class="tools">${done ? `<button class="mini" data-act="say-q">🔊 Послушать</button>` : ''}
+      <button class="mini" data-act="hint" ${S.hint||done?'disabled':''}>Убрать неверный <small>−50</small></button></div>`;
+}
+
+// Hotel comments start with «перевод ответа»; the rest of the comment is the joke.
+const stripTr = c => String(c).replace(/^«[^»]+»\.?\s*/, '');
+function gramSentence(item, k, cls){
+  const parts = item.s.split('___');
+  return `${esc(parts[0])}<span class="${cls}">${esc(item.o[k])}</span>${esc(parts[1] || '')}`;
+}
+function pickHTML(mode, item, k, good, label){
+  let en, ru = '', joke = '';
+  if(mode === 'grammar'){
+    en = gramSentence(item, k, good ? 'w-good' : 'w-bad');
+    if(good) ru = item.tr;
+  } else {
+    en = esc(optText(mode, item, k));
+    if(item.t && item.t[k]) ru = item.t[k];
+    else if(mode === 'runglish' && good) ru = item.ru;
+    if(mode === 'hotel') joke = stripTr(item.o[k][1]);
+    if(mode === 'runglish') joke = item.o[k][1];
+  }
+  return `<div class="pick ${good ? 'good' : 'bad'}">
+    <div class="pick-lbl"><span class="pick-ico">${good ? '✓' : '✗'}</span>${label}</div>
+    <div class="pick-en" lang="en">${en}</div>
+    ${ru ? `<div class="ru">${esc(ru)}</div>` : ''}
+    ${joke ? `<p class="joke">${esc(joke)}</p>` : ''}
+  </div>`;
+}
+function feedbackHTML(mode, item){
+  const ok = S.answered === 0, last = S.lives <= 0 || S.i >= S.queue.length - 1;
+  const verdict = `<div class="verdict ${ok ? 'ok' : 'no'}">${esc(S.verdict)} ${ok ? `<span class="pts pop">+${S.lastPts}</span>` : `<span class="pts bad">${S.lives <= 0 ? 'жизни закончились' : '−1 жизнь'}</span>`}</div>`;
+  const blocks = ok ? pickHTML(mode, item, 0, true, 'Твой ответ — верно')
+                    : pickHTML(mode, item, S.answered, false, 'Твой ответ') + pickHTML(mode, item, 0, true, 'Правильный ответ');
+  const tip = mode === 'grammar' ? `<div class="tip"><b>💡</b><span>${esc(item.rule)}</span></div>`
+            : mode === 'emoji' ? `<div class="tip"><b>💡</b><span>${esc(item.note)}</span></div>` : '';
+  return `<div class="fb">${verdict}${blocks}${tip}
+    <button class="btn next" data-act="next">${last ? 'Итоги →' : 'Дальше →'}</button></div>`;
+}
+
+function renderQuiz(){
+  const M = MODES[S.mode], item = cur(), done = S.answered != null;
+  const segs = S.queue.map((_,i) => `<i class="seg-i ${S.res[i]===true?'ok':S.res[i]===false?'no':i===S.i?'cur':''}"></i>`).join('');
+  const hud = `<div class="hud">
+      <div class="hud-l"><button class="back" data-act="home">← Меню</button><span class="mname">${esc(M.title)}</span>${S.custom ? '<span class="ai-chip">от ИИ</span>' : ''}</div>
+      <div class="hud-r">
+        <span class="lives" title="Жизни" aria-label="Жизни: ${S.lives} из 3">${[0,1,2].map(i=>heart(i<S.lives)).join('')}</span>
+        <span class="score">${S.streak>=2?`<span class="combo">комбо ×${S.streak}</span>`:''}<span>${S.score}</span><small class="sc-l">очков</small></span>
+      </div></div>
+    <div class="prog"><span class="prog-t">Вопрос ${S.i+1} из ${S.queue.length}</span><span class="segs" aria-hidden="true">${segs}</span></div>`;
+  const opts = S.order.map((k,pos) => {
+    let cls = 'opt', mark = pos + 1;
+    if(done){ if(k === 0){ cls += ' right'; mark = '✓'; } else if(k === S.answered){ cls += ' wrong'; mark = '✗'; } else cls += ' dim'; if(k === S.answered && S.just) cls += ' just'; }
+    else if(S.removed === k) cls += ' gone';
+    const dis = done || S.removed === k;
+    return `<button class="${cls}" data-act="answer" data-k="${k}" ${dis?'disabled':''}><span class="k">${mark}</span><span class="t" lang="en">${esc(optText(S.mode,item,k))}</span></button>`;
+  }).join('');
+  return `${hud}<section class="stage" id="stage">
+      ${promptHTML(S.mode, item, done)}
+      <div class="opts">${opts}</div>
+      ${done ? feedbackHTML(S.mode, item) : ''}
+    </section>`;
+}
+
+function reviewLine(mode, item){
+  if(mode === 'hotel') return `<li><span class="q">${item.g} <span lang="en">${esc(item.line)}</span></span><span class="a" lang="en">${esc(item.o[0][0])}</span></li>`;
+  if(mode === 'runglish') return `<li><span class="q">«${esc(item.ru)}»</span><span class="a" lang="en">${esc(item.o[0][0])}</span></li>`;
+  if(mode === 'grammar') return `<li><span class="a" lang="en">${esc(fullSentence(item))}</span><span class="q">${esc(item.rule)}</span></li>`;
+  return `<li><span class="q">${item.e}</span><span class="a"><span lang="en">${esc(item.o[0])}</span> — ${esc(item.tr)}</span></li>`;
+}
+
+function renderResult(){
+  const M = MODES[S.mode], R = RANKS.find(r => S.correct >= r.min);
+  const data = srcData();
+  return `<section class="result">
+    <div class="hud"><div class="hud-l"><button class="back" data-act="home">← Меню</button><span class="mname">${esc(M.title)}</span></div></div>
+    <div class="stage">
+      <div class="rank-emoji" aria-hidden="true">${R.e}</div>
+      <div class="eyebrow">Твоё звание</div>
+      <h2 class="rank">${esc(R.t)}</h2>
+      <p class="rank-d">${esc(R.d)}</p>
+      ${S.livesOut ? `<p class="note" style="margin-top:8px">Жизни закончились на вопросе ${S.i+1} из ${S.queue.length}. Кукуха улетела, но это было героически.</p>` : ''}
+      <div class="stats">
+        <div class="stat"><b>${S.score}</b><span>очков</span></div>
+        <div class="stat"><b>${S.correct}/${S.queue.length}</b><span>верно</span></div>
+        <div class="stat"><b>${S.bestStreak}</b><span>лучшее комбо</span></div>
+      </div>
+      ${S.newRecord && S.score > 0 ? `<div class="record">Новый рекорд!</div>` : ''}
+    </div>
+    <div class="review">
+      <h3 class="h3">Работа над ошибками</h3>
+      ${S.mistakes.length ? `<ul class="rev">${S.mistakes.map(ix => reviewLine(S.mode, data[ix])).join('')}</ul>` : `<p class="clean">Ни одной ошибки. Подозрительно идеально.</p>`}
+    </div>
+    <div class="row">
+      ${S.custom ? `${SAMPLE ? `<button class="btn blue" data-act="gen-again" data-mode="${S.mode}">Ещё 10 новых от ИИ</button>` : ''}<button class="btn" data-act="replay">Сыграть эти же ещё раз</button>`
+        : `<button class="btn" data-act="start" data-mode="${S.mode}">Ещё раз</button>${SAMPLE ? `<button class="btn blue" data-act="gen-again" data-mode="${S.mode}">10 новых от ИИ</button>` : ''}`}
+      <button class="btn ghost" data-act="home">Другой режим</button>
+    </div>
+  </section>`;
+}
+
+function renderPartySetup(){
+  const P = S.party;
+  const seg = (key, vals, label) => `<div class="seg" role="group" aria-label="${label}">${vals.map(v => `<button data-act="party-set" data-key="${key}" data-val="${v[0]}" aria-pressed="${P[key]===v[0]}">${v[1]}</button>`).join('')}</div>`;
+  const teams = range(P.n).map(i => `<label class="team-row" for="team-name-${i}"><i style="background:${TEAM_COLORS[i]}"></i>
+      <input class="team-in" id="team-name-${i}" data-i="${i}" maxlength="28" value="${esc(P.names[i] || '')}" aria-label="Название команды ${i+1}"></label>`).join('');
+  return `<div class="hud"><div class="hud-l"><button class="back" data-act="home">← Меню</button><span class="mname">Вечеринка</span></div></div>
+    <section class="stage setup">
+      <div>
+        <h2 class="h2">Собираем команды</h2>
+        <p class="note">Один телефон на всех. Каждый раунд — новый тип заданий: объясни слово, покажи фразу, переведи бред. Каждая команда ходит по очереди.</p>
+      </div>
+      <div class="field"><span class="flabel">Сколько команд</span>${seg('n', [[2,'2'],[3,'3'],[4,'4']], 'Количество команд')}</div>
+      <div class="field"><span class="flabel">Названия (можно поменять)</span><div class="teams">${teams}</div></div>
+      <div class="field"><span class="flabel">Время хода</span>${seg('time', [[45,'45 сек'],[60,'60 сек'],[90,'90 сек']], 'Время хода')}</div>
+      <div class="field"><span class="flabel">Раунды</span>${seg('rounds', [[3,'3 — каждый тип по разу'],[6,'6 — дважды']], 'Количество раундов')}</div>
+      <div><button class="btn" data-act="party-go">Погнали!</button></div>
+    </section>`;
+}
+
+function boardHTML(){
+  const P = S.party;
+  return `<div class="board">${P.teams.map((tm,i) => `<span class="tm ${i===P.turn && S.screen==='partyTurn'?'cur':''}"><i style="background:${TEAM_COLORS[i]}"></i>${esc(tm.name)}<b>${tm.score}</b></span>`).join('')}</div>`;
+}
+
+function renderPartyTurn(){
+  const P = S.party, T = P.teams[P.turn], t = ptype(), PT = PTYPES[t];
+  const hud = `<div class="hud"><div class="hud-l"><button class="back" data-act="home">← Меню</button><span class="mname">Раунд ${P.round+1} из ${P.rounds} · ${PT.name}</span></div></div>`;
+  let body = '';
+  if(P.phase === 'ready'){
+    body = `<section class="stage intro" style="--team:${TEAM_COLORS[P.turn]}">
+      <div class="eyebrow">Ходит команда</div>
+      <h2 class="teamname">${esc(T.name)}</h2>
+      <div class="rulebox">
+        <div class="ptype">${PT.name}</div>
+        <p>${esc(PT.rule)}</p>
+        <p class="ex">Пример: <span lang="en">${esc(PT.ex)}</span></p>
+        <p class="note">${esc(PT.who)}</p>
+      </div>
+      <button class="btn" data-act="party-start">Старт · ${P.time} сек</button>
+    </section>`;
+  } else if(P.phase === 'running' || P.phase === 'paused'){
+    const paused = P.phase === 'paused', okN = P.log.filter(x => x.ok).length;
+    const txt = P.card ? (t === 'alias' ? P.card.t.toUpperCase() : P.card.t) : '';
+    body = `<div class="ptop">
+        <div class="timer ${P.left<=5?'hurry':''}" id="timer" style="--p:${(P.left/P.time).toFixed(3)}" role="timer" aria-label="Осталось секунд"><span id="tsec">${Math.ceil(P.left)}</span></div>
+        <div class="pinfo"><div class="eyebrow">${esc(T.name)}</div><div class="gotn">Угадано: <b>${okN}</b></div></div>
+        <button class="mini" data-act="party-pause">${paused ? '▶ Продолжить' : '⏸ Пауза'}</button>
+      </div>
+      <div class="pcard t-${t}">${paused ? '<span class="paused">Пауза. Карточка спрятана.</span>' : `<span lang="en">${esc(txt)}</span>`}</div>
+      ${t === 'nonsense' && !paused ? `<div class="tools center"><button class="mini" data-act="say-card">🔊 Прочитать вслух</button><button class="mini" data-act="party-gloss">${P.gloss ? 'Скрыть шпаргалку' : 'Шпаргалка для ведущего'}</button></div>${P.gloss ? `<p class="gloss">${esc(P.card.g)}</p>` : ''}` : ''}
+      <div class="prow">
+        <button class="btn ghost" data-act="party-skip" ${paused?'disabled':''}>Пропустить</button>
+        <button class="btn good" data-act="party-got" ${paused?'disabled':''}>Угадали! +1</button>
+      </div>`;
+  } else {
+    const okN = P.log.filter(x => x.ok).length;
+    const last = P.turn === P.teams.length - 1 && P.round === P.rounds - 1;
+    const nextName = last ? '' : P.teams[(P.turn + 1) % P.teams.length].name;
+    body = `<section class="stage">
+      <div class="eyebrow">Время вышло</div>
+      <h2 class="h2">${esc(T.name)}: +${okN}</h2>
+      ${P.log.length ? `<ul class="log">${P.log.map(x => `<li class="${x.ok?'ok':'no'}"><span>${x.ok?'✓':'—'}</span><span lang="en">${esc(x.t)}</span></li>`).join('')}</ul>` : `<p class="note" style="margin-bottom:16px">Ни одной карточки. Это был стратегический манёвр?</p>`}
+      <button class="btn" data-act="party-next">${last ? 'Итоги игры' : 'Дальше: ' + esc(nextName) + ' →'}</button>
+    </section>`;
+  }
+  return hud + boardHTML() + body;
+}
+
+function renderPartyEnd(){
+  const P = S.party;
+  const sorted = P.teams.map((t,i) => Object.assign({i}, t)).sort((a,b) => b.score - a.score);
+  const top = sorted[0].score, winners = sorted.filter(t => t.score === top);
+  const head = winners.length > 1 ? 'Ничья! Победила дружба' : 'Победа: ' + winners[0].name;
+  return `<div class="hud"><div class="hud-l"><button class="back" data-act="home">← Меню</button><span class="mname">Вечеринка · итоги</span></div></div>
+    <section class="stage result" style="text-align:center">
+      <div class="rank-emoji" aria-hidden="true">🏆</div>
+      <div class="eyebrow">Финал</div>
+      <h2 class="rank">${esc(head)}</h2>
+      <p class="rank-d">${winners.length > 1 ? 'Все молодцы, но спорить о реванше никто не запрещал.' : 'Остальным — чай с молоком и реванш.'}</p>
+      <ol class="podium">${sorted.map((t,n) => `<li><span class="place">${n+1}</span><i style="width:14px;height:14px;border-radius:50%;border:2px solid #1B1530;background:${TEAM_COLORS[t.i]}"></i>${esc(t.name)}<span class="pscore">${t.score}</span></li>`).join('')}</ol>
+    </section>
+    <div class="row">
+      <button class="btn" data-act="party-rematch">Реванш</button>
+      <button class="btn ghost" data-act="party">Новые команды</button>
+      <button class="btn ghost" data-act="home">В меню</button>
+    </div>`;
+}
+
+let lastScreen = null, swapT = 0;
+function render(){
+  const views = {home:renderHome, quiz:renderQuiz, result:renderResult, gen:renderGen, partySetup:renderPartySetup, partyTurn:renderPartyTurn, partyEnd:renderPartyEnd};
+  const needsData = (S.screen === 'quiz' || S.screen === 'result') && !S.custom && !DATA_READY;
+  if(S.screen === 'gen' && !S.gen) S.screen = 'home';
+  $app.innerHTML = needsData ? `<section class="stage"><p class="note">${DATA_ERR ? esc(DATA_ERR) : 'Загружаю вопросы…'}</p></section>` : (views[S.screen] || renderHome)();
+  const st = document.getElementById('stage');
+  if(st && S.fx === 'shake') st.classList.add('shake');
+  if((S.screen !== lastScreen || S.fx === 'enter') && !reduceMotion){
+    $app.classList.add('swap'); clearTimeout(swapT); swapT = setTimeout(() => $app.classList.remove('swap'), 900);
+  }
+  lastScreen = S.screen;
+  S.fx = null; S.just = false;
+  syncToggles();
+}
+function syncToggles(){
+  document.getElementById('tog-voice').setAttribute('aria-pressed', String(!!settings.voice));
+  document.getElementById('tog-sfx').setAttribute('aria-pressed', String(!!settings.sfx));
+}
+
+/* ======================= EVENTS ======================= */
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if(!b || b.disabled || b.classList.contains('pressing')) return;
+  doAct(b);
+});
+function doAct(b){
+  const act = b.dataset.act;
+  switch(act){
+    case 'home': stopTimer(); if(genCtl){ try{ genCtl.abort(); }catch(err){} genCtl = null; } try{ speechSynthesis.cancel(); }catch(err){} S = {screen:'home', party:S.party}; render(); scrollTop(); break;
+    case 'start': startMode(b.dataset.mode); break;
+    case 'answer': answer(+b.dataset.k); break;
+    case 'next': next(); break;
+    case 'hint': hint(); break;
+    case 'say': say(b.dataset.text); break;
+    case 'say-q': { const it = cur(); if(S.mode === 'hotel') say(it.line, it.p, it.r); else say(spokenAnswer(S.mode, it)); break; }
+    case 'toggle-voice': settings.voice = !settings.voice; persist(); syncToggles(); if(!settings.voice){ try{ speechSynthesis.cancel(); }catch(err){} } break;
+    case 'toggle-sfx': settings.sfx = !settings.sfx; persist(); syncToggles(); if(settings.sfx) sfx('pop'); break;
+    case 'party': partySetup(); break;
+    case 'party-set': {
+      const P = S.party;
+      document.querySelectorAll('.team-in[data-i]').forEach(inp => { P.names[+inp.dataset.i] = inp.value; });
+      P[b.dataset.key] = +b.dataset.val; render(); break;
+    }
+    case 'party-go': partyGo(); break;
+    case 'party-start': partyStart(); break;
+    case 'party-pause': partyPause(); break;
+    case 'party-got': partyMark(true); break;
+    case 'party-skip': partyMark(false); break;
+    case 'party-gloss': S.party.gloss = !S.party.gloss; render(); break;
+    case 'say-card': if(S.party && S.party.card) say(S.party.card.t); break;
+    case 'party-next': partyNext(); break;
+    case 'party-rematch': partyRematch(); break;
+    case 'gen-mode': genCfg.mode = b.dataset.val; persist(); refreshGenSlot(); break;
+    case 'gen-level': genCfg.level = b.dataset.val; persist(); refreshGenSlot(); break;
+    case 'gen-go': { const t = document.getElementById('gen-theme'); if(t) genCfg.theme = t.value; generate(); break; }
+    case 'gen-again': genCfg.mode = b.dataset.mode; generate(); break;
+    case 'gen-cancel': if(genCtl) try{ genCtl.abort(); }catch(err){} genCtl = null; S = {screen:'home', party:S.party}; render(); scrollTop(); break;
+    case 'replay': startMode(S.mode, S.custom); break;
+  }
+}
+document.addEventListener('change', e => {
+  if(e.target.id === 'voice-sel'){ settings.voiceName = e.target.value; persist(); say('Hello! Nice to meet you.'); }
+});
+document.addEventListener('touchstart', () => {}, {passive:true});   // lets :active work on iOS
+document.addEventListener('input', e => {
+  if(e.target.classList && e.target.classList.contains('team-in') && e.target.dataset.i != null && S.party) S.party.names[+e.target.dataset.i] = e.target.value;
+  if(e.target.id === 'gen-theme') genCfg.theme = e.target.value;
+});
+document.addEventListener('keydown', e => {
+  if(e.target.id === 'gen-theme' && e.key === 'Enter'){ e.preventDefault(); genCfg.theme = e.target.value; generate(); }
+});
+document.addEventListener('keydown', e => {
+  if(e.target.matches && e.target.matches('input, textarea')) return;
+  if(S.screen !== 'quiz') return;
+  if(S.answered == null && /^[1-4]$/.test(e.key)){
+    const k = S.order[+e.key - 1];
+    if(k != null && S.removed !== k){ e.preventDefault(); answer(k); }
+  } else if(S.answered != null && e.key === 'Enter'){
+    if(document.activeElement && document.activeElement.tagName === 'BUTTON') return;
+    e.preventDefault(); next();
+  }
+});
+
+/* ======================= BOOT ======================= */
+function boot(data){
+  if(data && data.S && data.S.screen){
+    S = data.S;
+    if(S.party && S.party.phase === 'running') S.party.phase = 'paused';
+    if(S.screen === 'gen') S = {screen:'home', party:S.party};
+  }
+  render();
+  loadData();
+  // ИИ-генератор выключен: страница не обращается к Claude (SAMPLE остаётся null).
+}
+try{ window.claude?.hot?.snapshot(() => ({S: JSON.parse(JSON.stringify(S))})); }catch(e){}
+const hot = window.claude?.hot;
+hot?.ready ? hot.ready(boot) : boot(hot?.data ?? {});
+})();
+</script>
+</body>
+</html>
