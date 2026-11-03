@@ -335,6 +335,7 @@ p{margin:0}
 
 <script>
 const ELEVENLABS_API_KEY = "sk_7a1716611ae48586fd86fd731601f72228108cf7e8f70344";
+const ELEVENLABS_VOICE_ID = "uDTU6Os06Q0oNACCwHG9"; // ID голоса из твоего VoiceLab (не библиотечный — их бесплатный API не даёт)
 (() => {
 'use strict';
 
@@ -483,21 +484,34 @@ function enVoice(){
   const list = enVoices();
   return (settings.voiceName && list.find(v => v.name === settings.voiceName)) || list[0] || null;
 }
-let ttsAudio = null;
+// One reusable <audio>: unlocked by the first tap, so later plays are not blocked as autoplay.
+const ttsAudio = new Audio();
+const ttsCache = new Map();          // text -> object URL: each phrase is requested only once
+let ttsCtl = null, ttsSeq = 0;
+document.addEventListener('pointerdown', () => { if(!ttsAudio.src){ ttsAudio.play().catch(() => {}); } }, {once:true});
 async function say(text){
   const clean = String(text).replace(/[^\x20-\x7E]/g,' ').replace(/\s+/g,' ').trim();
   if(!clean) return;
+  const seq = ++ttsSeq;
+  if(ttsCtl) ttsCtl.abort();         // drop the previous request, so phrases don't overlap
+  ttsAudio.pause();
   try{
-    if(ttsAudio){ ttsAudio.pause(); ttsAudio = null; }
-    const r = await fetch('https://api.elevenlabs.io/v1/text-to-speech/uDTU6Os06Q0oNACCwHG9', {
-      method:'POST',
-      headers:{'xi-api-key':ELEVENLABS_API_KEY,'Content-Type':'application/json','Accept':'audio/mpeg'},
-      body:JSON.stringify({text:clean, model_id:'eleven_flash_v2_5'})
-    });
-    if(!r.ok) return;
-    ttsAudio = new Audio(URL.createObjectURL(await r.blob()));
-    ttsAudio.play().catch(() => {});
-  }catch(e){}
+    let url = ttsCache.get(clean);
+    if(!url){
+      ttsCtl = new AbortController();
+      const r = await fetch('https://api.elevenlabs.io/v1/text-to-speech/' + ELEVENLABS_VOICE_ID + '?output_format=mp3_44100_128', {
+        method:'POST', signal:ttsCtl.signal,
+        headers:{'xi-api-key':ELEVENLABS_API_KEY,'Content-Type':'application/json','Accept':'audio/mpeg'},
+        body:JSON.stringify({text:clean, model_id:'eleven_flash_v2_5'})
+      });
+      if(!r.ok){ console.warn('ElevenLabs', r.status, await r.text()); return; }
+      url = URL.createObjectURL(await r.blob());
+      ttsCache.set(clean, url);
+    }
+    if(seq !== ttsSeq) return;         // a newer phrase was requested meanwhile
+    ttsAudio.src = url;
+    await ttsAudio.play();
+  }catch(e){ if(e.name !== 'AbortError') console.warn('TTS', e); }
 }
 
 /* --- sound effects --- */
