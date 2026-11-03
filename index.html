@@ -489,7 +489,7 @@ async function say(text){
   if(!clean) return;
   try{
     if(ttsAudio){ ttsAudio.pause(); ttsAudio = null; }
-    const r = await fetch('https://api.elevenlabs.io/v1/text-to-speech/1C5CusbygKaJF7SwzOI0', {
+    const r = await fetch('https://api.elevenlabs.io/v1/text-to-speech/uDTU6Os06Q0oNACCwHG9', {
       method:'POST',
       headers:{'xi-api-key':ELEVENLABS_API_KEY,'Content-Type':'application/json','Accept':'audio/mpeg'},
       body:JSON.stringify({text:clean, model_id:'eleven_flash_v2_5'})
